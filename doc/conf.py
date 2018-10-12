@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PMHC MDS'
+project = u'headspace PMHC MDS extension'
 copyright = u'2018, Australian Government - Department of Health'
 author = u'PMHC MDS Working Group'
 
@@ -60,7 +60,7 @@ author = u'PMHC MDS Working Group'
 
 def get_version():
 
-   version = 'v1.0.12'
+   version = 'v1.0.0'
 
    try:
       version = os.environ["GIT_VERSION"]
@@ -72,7 +72,7 @@ def get_version():
 # The short X.Y version.
 # version = get_version().lstrip('v').rstrip()
 
-version = "Version 1.0.12"
+version = "Version 1.0.0"
 
 # The full version, including alpha/beta/rc tags.
 release = version
@@ -272,7 +272,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PMHC MDS Specification', u'Primary Mental Health Care Minimum Dataset specification',
+    (master_doc, 'headspace PMHC MDS Specification Extension', u'headspace Primary Mental Health Care Minimum Dataset specification extension',
      [author], 1)
 ]
 
@@ -286,7 +286,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'PMHC', u'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'headspace PMHC extension', u'headspace Primary Mental Health Care Minimum Dataset specification extension',
    author, 'PMHC', 'Primary Mental Health Care Minimum Dataset specification',
    'Miscellaneous'),
 ]

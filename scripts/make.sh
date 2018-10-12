@@ -9,7 +9,7 @@ scripts/metadata2zip.sh
 rm -rf doc/_static/headspace-spec-meta.zip
 
 # copy new zip to data-specification folder
-mv headspace-spec-meta.zip doc/_static/
+#mv headspace-spec-meta.zip doc/_static/
 
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
   --meta=headspace-metadata.json \

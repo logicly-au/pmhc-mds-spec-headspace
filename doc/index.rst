@@ -1,22 +1,24 @@
-PMHC-MDS Documentation
-======================
+headspace PMHC MDS Documentation
+================================
 
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
 .. only:: builder_html
 
+   As the headspace PMHC MDS Data Collection is an
+   extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS), the
+   current PMHC MDS Data online documentation is available to be viewed at https://docs.pmhc-mds.com/.
+
    The main documentation for the site is organized into several sections:
 
-   * :ref:`user-docs`
    * :ref:`data-docs`
-   * :ref:`faqs`
 
    Getting Help
    ------------
 
    A dedicated **Help Desk** is available to support Primary Health Networks and
-   Provider Organisations implementing PMHC in relation to the minimum dataset
+   Provider Organisations and headspace implementing PMHC in relation to the minimum dataset
    system. All enquiries should be directed to: support@pmhc-mds.com.
 
 .. End of INTRODUCTION
@@ -27,9 +29,7 @@ PMHC-MDS Documentation
    :caption: Table of Contents
    :maxdepth: 3
 
-   user-documentation/index
    data-specification/index
-   faqs/index
 
 
 
@@ -38,6 +38,6 @@ PMHC-MDS Documentation
 
 .. only:: builder_html
 
-   Download this specification as a :download:`PDF </_static/PMHC.pdf>`.
+   Download this specification as a :download:`PDF </_static/HEADSPACE.pdf>`.
 
 .. End of LINK TO THE PDF

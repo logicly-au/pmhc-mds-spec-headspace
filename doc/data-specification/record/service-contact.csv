@@ -27,7 +27,8 @@ METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 :6: Child or youth specific assistance NEC
 :7: Suicide prevention specific assistance NEC
 :8: Cultural specific assistance NEC
-:98: ATAPS"
+:98: ATAPS
+:99: Missing"
 "`Service Contact - Postcode`_ (service_contact_postcode)
 
 
@@ -74,7 +75,8 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :6: 76-90 mins
 :7: 91-105 mins
 :8: 106-120 mins
-:9: over 120 mins"
+:9: over 120 mins
+:99: Missing"
 "`Service Contact - Copayment`_ (service_contact_copayment)
 
 ",number,yes,"0 - 999999.99"
@@ -98,6 +100,12 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 ",string,yes,":1: No further services are planned for the client in the current episode
 :2: Further services are planned for the client in the current episode
 :3: Not known at this stage"
+"`Service Contact - headspace Funding Source`_ (headspace_funding_source)
+
+",string,yes,":1: Source 1
+:2: Source 2
+:3: Source 3
+:4: Source 4"
 "`Service Contact - Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."
