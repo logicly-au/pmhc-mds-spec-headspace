@@ -6,13 +6,14 @@ set -e
 scripts/metadata2zip.sh
 
 # remove old zip file
-rm -rf doc/_static/pmhcmds-spec-meta.zip
+rm -rf doc/_static/headspace-spec-meta.zip
 
 # copy new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/_static/
+mv headspace-spec-meta.zip doc/_static/
 
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
-  --meta=pmhc-metadata.json
+  --meta=headspace-metadata.json \
+  --record_match "^Service|Metadata$"
 
 pushd .
 

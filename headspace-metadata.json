@@ -8,6 +8,12 @@
   },
   "dc:modified": { "@value": "2016-06-22", "@type": "xsd:date"},
   "tables": [{
+    "dc:title": "Metadata",
+    "url": "data/metadata.csv",
+    "schema:name": "metadata",
+    "schema:description": "table/metadata.rst",
+    "tableSchema": "table/metadata-metadata.json"
+  }, {
     "dc:title": "Provider Organisation",
     "url": "data/organisations.csv",
     "schema:name": "organisation",
@@ -160,6 +166,9 @@
   }, {
     "url": "table/service-contact/interpreter.csv",
     "tableSchema": "table/service-contact/interpreter.json"
+  }, {
+    "url": "table/service-contact/headspace-funding-source.csv",
+    "tableSchema": "table/service-contact/headspace-funding-source.json"
   }, {
     "url": "table/collection-occasion/reason.csv",
     "tableSchema": "table/collection-occasion/reason.json"
