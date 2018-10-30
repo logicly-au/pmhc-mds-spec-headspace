@@ -262,10 +262,13 @@ The source of funding for a headspace service contact
 :Required: yes
 
 :Domain:
-  :1: Source 1
-  :2: Source 2
-  :3: Source 3
-  :4: Source 4
+  :1: headspace Grant
+  :2: MBS
+  :3: In Kind
+  :4: Other Government Funding - Federal
+  :5: Other Government Funding - State
+  :6: Other
+  :99: Missing
 
 ----------
 

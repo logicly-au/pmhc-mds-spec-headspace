@@ -16,7 +16,13 @@ Please refer to `PMHC MDS File types <https://docs.pmhc-mds.com/data-specificati
 
 Files or worksheets to upload
 -----------------------------
-The following files/worksheets can be uploaded to the PMHC MDS as part of the headspace data specification:
+The headspace upload format is slightly different to the PMHC MDS standard format.
+Files and worksheets in the PMHC MDS standard format require the first line
+of each file to have a version number. The headspace upload format removes this line
+from each file/worksheet and replaces it with a new metadata file/worksheet.
+
+The following files/worksheets can be uploaded to the PMHC MDS as part of the
+headspace data specification:
 
 .. csv-table:: Summary of files to upload
   :file: upload-file-types.csv
@@ -29,7 +35,7 @@ Each of the example files assumes the following organisation structure:
 +==================+============================+=============================================+=====================+
 | PHN999           | Test PHN                   | Primary Health Network                      | None                |
 +------------------+----------------------------+---------------------------------------------+---------------------+
-| NFP01            | Test Provider Organisation | Private Allied Health Professional Practice | PHN999              |
+| NFP01            | Test Provider Organisation | Headspace Centre                            | PHN999              |
 +------------------+----------------------------+---------------------------------------------+---------------------+
 
 .. _file-format:
@@ -92,7 +98,7 @@ Data elements for the client upload file/worksheet are defined at
 Example client data:
 
 - `CSV client file <../_static/clients.csv>`_.
-- `XLSX client worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX client worksheet <../_static/headspace-clients-upload.xlsx>`_.
 
 .. _episode-format:
 
@@ -106,7 +112,7 @@ Data elements for the episode upload file/worksheet are defined at
 Example episode data:
 
 - `CSV episode file <../_static/episodes.csv>`_.
-- `XLSX episode worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX episode worksheet <../_static/headspace-episodes-upload.xlsx>`_.
 
 .. _service-contact-format:
 
@@ -120,7 +126,7 @@ Data elements for the service contact upload file/worksheet are defined at
 Example service contact data:
 
 - `CSV service contact file <../_static/service-contacts.csv>`_.
-- `XLSX service contact worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX service contact worksheet <../_static/headspace-service-contacts-upload.xlsx>`_.
 
 .. _k10p-format:
 
@@ -134,7 +140,7 @@ at `PMHC MDS K10+ <https://docs.pmhc-mds.com/data-specification/data-model-and-s
 Example K10+ data:
 
 - `CSV K10+ file <../_static/k10p.csv>`_.
-- `XLSX K10+ worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX K10+ worksheet <../_static/headspace-k10p-upload.xlsx>`_.
 
 .. _k5-format:
 
@@ -148,7 +154,7 @@ at `PMHC MDS K5 <https://docs.pmhc-mds.com/data-specification/data-model-and-spe
 Example K5 data:
 
 - `CSV K5 file <../_static/k5.csv>`_.
-- `XLSX K5 worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX K5 worksheet <../_static/headspace-k5-upload.xlsx>`_.
 
 .. _sdq-format:
 
@@ -162,7 +168,7 @@ at `PMHC MDS SDQ <https://docs.pmhc-mds.com/data-specification/data-model-and-sp
 Example SDQ data:
 
 - `CSV SDQ file <../_static/sdq.csv>`_.
-- `XLSX SDQ worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX SDQ worksheet <../_static/headspace-sdq-upload.xlsx>`_.
 
 .. _practitioner-format:
 
@@ -178,7 +184,7 @@ Data elements for the practitioner upload file/worksheet are defined at
 Example practitioner data:
 
 - `CSV practitioner file <../_static/practitioners.csv>`_.
-- `XLSX practitioner worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX practitioner worksheet <../_static/headspace-practitioners-upload.xlsx>`_.
 
 .. _organisation-format:
 
@@ -194,7 +200,7 @@ Data elements for the Provider Organisation upload file/worksheet are defined at
 Example organisation data:
 
 - `CSV organisation file <../_static/organisations.csv>`_.
-- `XLSX organisation worksheet <../_static/headspace-upload.xlsx>`_.
+- `XLSX organisation worksheet <../_static/headspace-organisations-upload.xlsx>`_.
 
 .. _deleting-records:
 
@@ -206,10 +212,3 @@ Please refer to `PMHC MDS Deleting records <https://docs.pmhc-mds.com/data-speci
 Example files showing how to delete via upload:
 
 - `XLSX file containing all the worksheets <../_static/headspace-upload-delete.xlsx>`_.
-- `CSV delete client file <../_static/clients-delete.csv>`_.
-- `CSV delete episode file <../_static/episodes-delete.csv>`_.
-- `CSV delete service contact file <../_static/service-contacts-delete.csv>`_.
-- `CSV delete K10+ file <../_static/k10p-delete.csv>`_.
-- `CSV detete K5 file <../_static/k5-delete.csv>`_.
-- `CSV delete SDQ file <../_static/sdq-delete.csv>`_.
-- `CSV delete practitioner file <../_static/practitioners-delete.csv>`_.

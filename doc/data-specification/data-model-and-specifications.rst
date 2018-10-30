@@ -24,21 +24,6 @@ Data model
 Record formats
 --------------
 
-.. _service-contact-data-elements:
-
-Service Contact
-^^^^^^^^^^^^^^^
-
-See `PMHC MDS Service Contact <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#service-contact-data-elements>`_ for definition of a service contact.
-
-Service contacts are managed by headspace via upload.
-
-.. csv-table:: Service contact record layout
-   :file: record/service-contact.csv
-   :header-rows: 1
-
-----------
-
 .. _metadata-data-elements:
 
 Metadata
@@ -62,14 +47,65 @@ following table:
 | version      | 1          |
 +--------------+------------+
 
-.. _pmhc-data-elements:
+----------
 
-PMHC MDS Record Formats
-~~~~~~~~~~~~~~~~~~~~~~~
+.. _provider-organisation-data-elements:
 
-As the NSPT is an extension of the Primary Mental Health Care Minimum Data Set
-(PMHC MDS), the current PMHC MDS Data model and specification record formats are
-available to be viewed at https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats.
+Provider Organisation
+^^^^^^^^^^^^^^^^^^^^^
+
+Same as standard `PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_.
+
+.. _practitioner-data-elements:
+
+----------
+
+Practitioner
+^^^^^^^^^^^^
+
+Same as standard `PMHC MDS Practitioner <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#practitioner-data-elements>`_.
+
+.. _client-data-elements:
+
+----------
+
+Client
+^^^^^^
+
+Same as standard `PMHC MDS Client <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements>`_.
+
+.. _episode-data-elements:
+
+----------
+
+Episode
+^^^^^^^
+
+Same as standard `PMHC MDS Episode <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-data-elements>`_.
+
+----------
+
+.. _service-contact-data-elements:
+
+Service Contact
+^^^^^^^^^^^^^^^
+
+See `PMHC MDS Service Contact <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#key-concepts-service-contact>`_ for definition of a service contact.
+
+Service contacts are managed by headspace via upload.
+
+.. csv-table:: Service contact record layout
+   :file: record/service-contact.csv
+   :header-rows: 1
+
+----------
+
+.. _outcome-collection-occasion-data-elements:
+
+Outcome Collection Occasion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See `PMHC MDS Outcome Collection Occasion <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements>`_.
 
 ----------
 
