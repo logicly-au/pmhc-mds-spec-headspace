@@ -25,7 +25,7 @@ GetOptions (
 ) or die("Error in command line arguments\n");
 
 # Quick and dirty say to work out which spec we're rendering
-my $spec_type = 'PMHC';
+my $spec_type = 'HEADSPACE';
 $webservice  ||= 'https://prince.sdintra.net';
 $output_file ||= $dst . "/$spec_type.pdf";
 
