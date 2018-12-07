@@ -43,3 +43,7 @@ If you need to build and push a new image containing the tools to convert
 metadata to restructured text see the csvw-metadata2rst repo.
 
 https://gh.sdintra.net/PMHC/csvw-metadata2rst
+
+### Update example upload files
+
+The example upload files are stored in spec-headspace/data/_orig. The build script then moves them to the required location.
