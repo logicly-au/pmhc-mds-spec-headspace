@@ -505,6 +505,7 @@ The main type of service provided in the service contact, as represented by the 
   :6: Child or youth specific assistance NEC
   :7: Suicide prevention specific assistance NEC
   :8: Cultural specific assistance NEC
+  :9: Psychosocial support
   :98: ATAPS
   :99: Missing
 :Notes:
@@ -654,10 +655,11 @@ Where the service contact was delivered, as represented by a code.
   :5: Headspace Centre
   :6: Other primary care setting
   :7: Public or private hospital
-  :8: Aged care centre
+  :8: Residential aged care facility
   :9: School or other educational centre
   :10: Client's Workplace
   :11: Other
+  :12: Aged care centre - non-residential
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
 :Notes:
