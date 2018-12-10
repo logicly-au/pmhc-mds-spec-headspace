@@ -5,7 +5,6 @@ use 5.20.0;
 
 use HTML::Element;
 use HTML::Entities;
-use File::Basename qw/dirname/;
 use HTML::TreeBuilder;
 use File::Slurp::Tiny qw/read_file write_file read_dir/;
 use Getopt::Long;
@@ -13,19 +12,23 @@ use DateTime;
 
 use SD::PrinceXML::Client 22;
 
-my $src = '/mnt/cwd/doc/build/singlehtml';
-my $dst = '/mnt/cwd/doc/_static';
-
 GetOptions (
     "webservice=s"  => \my $webservice,
-    "output=s"      => \my $output_file,
+    "spec-name=s"   => \my $spec_name,
+    "doc-dir=s"     => \my $doc_dir,
     "f|forcesphinx" => \my $sphinx,
 ) or die("Error in command line arguments\n");
 
-# Quick and dirty say to work out which spec we're rendering
-my $spec_type = $ARGV[0] || die 'Please specify a spec name';
+my $src = "$doc_dir/build/singlehtml";
+my $dst = "$doc_dir/_static";
+my $output_file = "$dst/$spec_name.pdf";
+
+print "$src -> $dst\n";
+
+$spec_name   || die 'You must specify a spec name';
+$doc_dir     || die 'You must specify a doc directory';
 $webservice  ||= 'https://prince.sdintra.net';
-$output_file ||= $dst . "/$spec_type.pdf";
+
 
 #=======================================================================
 # Use Sphinx to generate the source

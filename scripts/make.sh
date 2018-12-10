@@ -31,10 +31,11 @@ echo "PWD=$current_dir"
 
 pwd
 
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make html
-
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make singlehtml
+docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make html singlehtml
 
 popd
 
-docker-compose -f docker-compose.make-pdf.yml run make-pdf PMHC-headspace
+docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx-html2pdf:production \
+  /mnt/workdir/scripts/make-pdf.pl \
+  --spec-name "PMHC-headspace" \
+  --doc-dir   "/mnt/workdir/doc"
