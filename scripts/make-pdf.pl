@@ -23,8 +23,6 @@ my $src = "$doc_dir/build/singlehtml";
 my $dst = "$doc_dir/_static";
 my $output_file = "$dst/$spec_name.pdf";
 
-print "$src -> $dst\n";
-
 $spec_name   || die 'You must specify a spec name';
 $doc_dir     || die 'You must specify a doc directory';
 $webservice  ||= 'https://prince.sdintra.net';
