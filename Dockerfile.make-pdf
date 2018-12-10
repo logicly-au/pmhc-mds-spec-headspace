@@ -1,0 +1,15 @@
+FROM docker.sdlocal.net/devel/stratperlbase
+
+ADD modules.make-pdf.txt modules.make-pdf.txt
+
+RUN cpanm < modules.make-pdf.txt
+
+# ADD lib/CSVW2RST.pm /usr/local/lib/
+# ENV PERL5LIB=/usr/local/lib
+
+ADD scripts/make-pdf.pl /usr/local/bin/
+ADD sd-platform /etc/sd-platform
+
+WORKDIR /mnt/cwd
+
+ENTRYPOINT ["make-pdf.pl"]

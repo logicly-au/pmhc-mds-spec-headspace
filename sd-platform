@@ -1,0 +1,17 @@
+# This was copied from fitz-dev004 - we need one to grab off a server.
+SD_UNIVERSE="build"
+SD_GENERATION="current"
+SD_DEPLOYMENT="development"
+SD_LOCATION="fitz_testing"
+SD_RIAK_SERVERS="bld-riak01.strategicdata.internal"
+SD_S3_SERVERS="bld-s3.strategicdata.internal:81"
+SD_EMAILSERVICE_URL="http://fitz-postman01.strategicdata.internal"
+SD_LDAP_SERVERS="fitz-auth01.strategicdata.internal,fitz-auth02.strategicdata.internal"
+SD_PRINCEXML_URL=https://interact-float.dc.sdlocal.net:8087
+SD_PASSWORD_MIN_LENGTH_LONG=13
+SD_PASSWORD_MIN_LENGTH_SHORT=10
+SD_PASSWORD_MIN_TYPES_LONG=1
+SD_PASSWORD_MIN_TYPES_SHORT=3
+SD_SMS_SERVER="https://interact-float.dc.sdlocal.net:8089"
+SD_SSO_URI="http://streuth.core.build.sdlocal.net"
+SD_STOMP_SERVERS="fitz-mq01.strategicdata.internal:6163"

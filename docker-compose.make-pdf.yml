@@ -1,0 +1,8 @@
+version: '3'
+services:
+  make-pdf:
+    build:
+      context: .
+      dockerfile: Dockerfile.make-pdf
+    volumes:
+      - .:/mnt/cwd

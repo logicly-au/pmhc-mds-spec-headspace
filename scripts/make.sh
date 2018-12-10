@@ -22,11 +22,6 @@ cd doc
 rm -rf data-specification/_data build
 cp -rf ../data data-specification/_data
 
-if [ -z $1 ]; then
-  ARG1=html
-else
-  ARG1=$1
-fi
 
 GIT_VERSION=$(git describe --tags --always)
 
@@ -36,6 +31,10 @@ echo "PWD=$current_dir"
 
 pwd
 
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make $ARG1
+docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make html
+
+docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make singlehtml
 
 popd
+
+docker-compose -f docker-compose.make-pdf.yml run make-pdf PMHC-headspace
