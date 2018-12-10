@@ -11,6 +11,7 @@ rm -rf doc/_static/headspace-spec-meta.zip
 # copy new zip to data-specification folder
 #mv headspace-spec-meta.zip doc/_static/
 
+docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
   --meta=headspace-metadata.json \
   --record_match "^Service|Metadata$"
@@ -31,10 +32,15 @@ echo "PWD=$current_dir"
 
 pwd
 
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make html
-
-docker run -e GIT_VERSION -v `pwd`:/mnt/workdir stratdat/sphinx:production make singlehtml
+docker pull stratdat/sphinx:production
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+  stratdat/sphinx:production make html singlehtml
 
 popd
 
-docker-compose -f docker-compose.make-pdf.yml run make-pdf PMHC-headspace
+docker pull stratdat/sphinx-html2pdf:production
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+  stratdat/sphinx-html2pdf:production \
+  /mnt/workdir/scripts/make-pdf.pl \
+  --spec-name "PMHC-headspace" \
+  --doc-dir   "/mnt/workdir/doc"
