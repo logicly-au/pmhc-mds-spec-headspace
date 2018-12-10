@@ -27,6 +27,10 @@ $spec_name   || die 'You must specify a spec name';
 $doc_dir     || die 'You must specify a doc directory';
 $webservice  ||= 'https://prince.sdintra.net';
 
+#=======================================================================
+# Prepare the generated source for sending to Prince
+#=======================================================================
+
 say "Preparing for Prince";
 
 # Add the cover page and TOC
