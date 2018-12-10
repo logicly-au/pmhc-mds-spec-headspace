@@ -27,20 +27,6 @@ $spec_name   || die 'You must specify a spec name';
 $doc_dir     || die 'You must specify a doc directory';
 $webservice  ||= 'https://prince.sdintra.net';
 
-
-#=======================================================================
-# Use Sphinx to generate the source
-#=======================================================================
-
-#if( $sphinx || ! -f $src . '/index.html' ) {
-#    say "Building singlehtml using Sphinx";
-#    qx"$RealDir/make.sh singlehtml 2>&1";
-#}
-
-#=======================================================================
-# Prepare the generated source for sending to Prince
-#=======================================================================
-
 say "Preparing for Prince";
 
 # Add the cover page and TOC
