@@ -2,17 +2,19 @@
 
 # Exit if anything errors
 set -e
+# make zip file
+scripts/metadata2zip.sh
 
-source config.sh
+# remove old zip file
+rm -rf doc/_static/headspace-spec-meta.zip
 
-if [[ -z $RECORD_MATCH ]]; then
-  RECORD_MATCH=".*"
-fi
+# copy new zip to data-specification folder
+#mv headspace-spec-meta.zip doc/_static/
 
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
-  --meta=${METADATA_FILE} \
-  --record_match "${RECORD_MATCH}"
+  --meta=headspace-metadata.json \
+  --record_match "^Service|Metadata$"
 
 pushd .
 
@@ -21,7 +23,14 @@ cd doc
 rm -rf data-specification/_data build
 cp -rf ../data data-specification/_data
 
+
 GIT_VERSION=$(git describe --tags --always)
+
+current_dir=`pwd`
+
+echo "PWD=$current_dir"
+
+pwd
 
 docker pull stratdat/sphinx:production
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
@@ -30,21 +39,8 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 popd
 
 docker pull stratdat/sphinx-html2pdf:production
-
-echo "Optimising images"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  --workdir /mnt/workdir/doc/build/singlehtml/_images \
-  stratdat/sphinx-html2pdf:production \
-  find . -name *.png -exec pngquant --force --output {} 8 {} \;
-
-echo "Building PDF"
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
-  --spec-name ${SPEC_NAME} \
+  --spec-name "PMHC-headspace" \
   --doc-dir   "/mnt/workdir/doc"
-
-# make zip file
-scripts/metadata2zip.sh
-# mv new zip to data-specification folder
-mv pmhcmds-spec-meta.zip doc/build/html/_static/
