@@ -38,6 +38,6 @@ headspace PMHC MDS Documentation
 
 .. only:: builder_html
 
-   Download this specification as a :download:`PDF </_static/HEADSPACE.pdf>`.
+   Download this specification as a :download:`PDF </_static/PMHC-headspace.pdf>`.
 
 .. End of LINK TO THE PDF
