@@ -209,7 +209,7 @@
     "required": true
   },{
     "name": "service_contact_final",
-    "titles": "service_contact_final",
+    "titles": [ "service_contact_final" ],
     "dc:title": "Service Contact - Final",
     "schema:description": "An indication of whether the Service Contact is the final for the current Episode of Care",
     "schema:disambiguatingDescription": "table/service-contact/final.rst",
@@ -221,7 +221,7 @@
     "required": true
   },{
     "name": "headspace_funding_source",
-    "titles": "headspace_funding_source",
+    "titles": [ "headspace_funding_source" ],
     "dc:title": "Service Contact - headspace Funding Source",
     "schema:description": "The source of funding for a headspace service contact",
     "schema:dateCreated": "2018-10-12",
