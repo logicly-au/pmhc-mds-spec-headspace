@@ -64,7 +64,7 @@ headspace Metadata file
 All headspace data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain 'key' and the second cell must contain 'value'
 - In the second row, the first cell must contain 'type' and the second cell must contain 'headspace'
-- In the third row, the first cell must contain 'version' and the second cell must contain '1'
+- In the third row, the first cell must contain 'version' and the second cell must contain '2'
 
 i.e.:
 
@@ -73,7 +73,7 @@ i.e.:
 +--------------+------------+
 | type         | headspace  |
 +--------------+------------+
-| version      | 1          |
+| version      | 2          |
 +--------------+------------+
 
 Data elements for the headspace metadata upload file/worksheet are defined at

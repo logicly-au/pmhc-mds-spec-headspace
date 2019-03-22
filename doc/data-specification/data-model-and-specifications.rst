@@ -44,7 +44,7 @@ following table:
 +--------------+------------+
 | type         | headspace  |
 +--------------+------------+
-| version      | 1          |
+| version      | 2          |
 +--------------+------------+
 
 ----------
@@ -56,27 +56,27 @@ Provider Organisation
 
 Same as standard `PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_.
 
-.. _practitioner-data-elements:
-
 ----------
+
+.. _practitioner-data-elements:
 
 Practitioner
 ^^^^^^^^^^^^
 
 Same as standard `PMHC MDS Practitioner <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#practitioner-data-elements>`_.
 
-.. _client-data-elements:
-
 ----------
+
+.. _client-data-elements:
 
 Client
 ^^^^^^
 
 Same as standard `PMHC MDS Client <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements>`_.
 
-.. _episode-data-elements:
-
 ----------
+
+.. _episode-data-elements:
 
 Episode
 ^^^^^^^

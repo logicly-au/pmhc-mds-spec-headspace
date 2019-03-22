@@ -94,17 +94,31 @@
     },
     "required": true
   },{
-    "name": "organisation_status",
-    "titles": [ "organisation_status" ],
-    "dc:title" : "Provider Organisation - Status",
-    "schema:description": "A flag to represent whether a provider organisation is actively delivering services.",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2017-06-29",
+    "name": "organisation_start_date",
+    "titles": [ "organisation_start_date", "Start Date" ],
+    "dc:title" : "Provider Organisation - Start Date",
+    "schema:description": "The date on which a provider organisation started delivering services.",
+    "schema:dateCreated": "2019-03-13",
+    "schema:dateDeleted": "2019-03-13",
+    "schema:dateModified": "2019-03-13",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2014-07-01"
+    },
+    "required": true
+  },{
+    "name": "organisation_end_date",
+    "titles": [ "organisation_end_date", "End Date" ],
+    "dc:title" : "Provider Organisation - End Date",
+    "schema:description": "The date on which a provider organisation stopped delivering services.",
+    "schema:dateCreated": "2019-03-13",
+    "schema:dateDeleted": "2019-03-13",
+    "schema:dateModified": "2019-03-13",
     "datatype": {
       "base": "string"
     },
-    "required": true
+    "required": false
   },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],
