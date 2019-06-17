@@ -330,5 +330,11 @@
       "resource": "table/service-contact/headspace-funding-source.csv",
       "columnReference": "id"
     }
+  }, {
+    "columnReference": [ "delivery_organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
   }]
 }
