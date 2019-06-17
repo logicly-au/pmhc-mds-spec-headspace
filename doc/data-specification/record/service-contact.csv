@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation that is responsible for the Episode of Care."
 "`Service Contact Key`_ (service_contact_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation."
@@ -111,6 +111,9 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 :5: Other Government Funding - State
 :6: Other
 :99: Missing"
+"`Delivery Organisation Path`_ (delivery_organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`Service Contact - Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."

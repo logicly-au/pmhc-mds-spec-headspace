@@ -105,7 +105,50 @@ Service contacts are managed by headspace via upload.
 Outcome Collection Occasion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See `PMHC MDS Outcome Collection Occasion <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#outcome-collection-occasion-data-elements>`_.
+See `PMHC MDS Outcome Collection Occasion <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#key-concepts-outcome-collection-occasion>`_ for a definitation of an outcome collection occasion.
+
+Outcome Collection Occasions are managed by headspace via upload.
+
+.. _k10p-data-elements:
+
+K10+
+""""
+
+Reporting individual item scores will eventually be required.
+In the short term, respondents can either report all 14 item scores or report
+the K10 total score as well as item scores for the 4 extra items in the K10+.
+
+.. csv-table:: K10+ record layout
+   :file: record/k10p-collection-occasion.csv
+   :header-rows: 1
+
+When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
+they are not required to answer questions 11-14. Where a question has not been
+answered please select a response of 'Not stated / missing'.
+
+.. _k5-data-elements:
+
+K5
+""
+
+Reporting individual item scores will eventually be required.
+In the short term, respondents can either report all 5 item scores or report
+the K5 total score.
+
+.. csv-table:: K5 record layout
+   :file: record/k5-collection-occasion.csv
+   :header-rows: 1
+
+.. _sdq-data-elements:
+
+SDQ
+"""
+
+Please refer to the SDQ notes at `PMHC MDS SDQ <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#sdq-data-elements>`_
+
+.. csv-table:: SDQ record layout
+   :file: record/sdq-collection-occasion.csv
+   :header-rows: 1
 
 ----------
 

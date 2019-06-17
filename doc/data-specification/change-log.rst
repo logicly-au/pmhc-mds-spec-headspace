@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-22/3/2019 - Version 2.0
+17/6/2019 - Version 2.0
 -----------------------
 
 * :ref:`data-model-and-specifications`
@@ -22,11 +22,25 @@ Data Specification Change log
 
       * Added Provider Organisation - End Date (See `PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_)
 
-      * Added Provider Organisation - OMSSS Provider Organisation Email (`See PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_)
-
     * :ref:`episode-data-elements`
 
       * Added Episode - Continuity of Support (See `PMHC MDS Episode <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-data-elements>`_)
+
+    * :ref:`service-contact-data-elements`
+
+      * Added :ref:`dfn-delivery_organisation_path`
+
+    * :ref:`k10p-data-elements`
+
+      * Added :ref:`dfn-delivery_organisation_path`
+
+    * :ref:`k5-data-elements`
+
+      * Added :ref:`dfn-delivery_organisation_path`
+
+    * :ref:`sdq-data-elements`
+
+      * Added :ref:`dfn-delivery_organisation_path`
 
 * :ref:`upload_specification`
 

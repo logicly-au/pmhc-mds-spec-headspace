@@ -5,7 +5,7 @@
     "name": "organisation_path",
     "titles": [ "organisation_path" ],
     "dc:title": "Organisation Path",
-    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation that is responsible for the Episode of Care.",
     "schema:disambiguatingDescription": "type/organisation_path.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
