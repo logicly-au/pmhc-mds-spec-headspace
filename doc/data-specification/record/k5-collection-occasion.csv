@@ -1,7 +1,7 @@
 "Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation that is responsible for the Episode of Care."
 "`Collection Occasion Key`_ (collection_occasion_key)
 
 ","string (2,50)",yes,"This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
@@ -16,6 +16,9 @@
 ",string,yes,":1: Episode start
 :2: Review
 :3: Episode end"
+"`Delivery Organisation Path`_ (delivery_organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
 "`K5 - Question 1`_ (k5_item1)
 
 ",string,yes,":1: None of the time

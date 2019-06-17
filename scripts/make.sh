@@ -14,7 +14,7 @@ rm -rf doc/_static/headspace-spec-meta.zip
 docker pull docker.sdlocal.net/csvw/metadata2rst
 docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst \
   --meta=headspace-metadata.json \
-  --record_match "^Service|Metadata$"
+  --record_match "^Service|^K10|^K5|^SDQ|Metadata$"
 
 pushd .
 
