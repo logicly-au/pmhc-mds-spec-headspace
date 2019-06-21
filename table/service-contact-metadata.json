@@ -220,10 +220,11 @@
     },
     "required": true
   },{
-    "name": "headspace_funding_source",
-    "titles": [ "headspace_funding_source" ],
-    "dc:title": "Service Contact - headspace Funding Source",
-    "schema:description": "The source of funding for a headspace service contact",
+    "name": "funding_source",
+    "titles": [ "funding_source" ],
+    "dc:title": "Service Contact - Funding Source",
+    "schema:description": "The source of funding for a service contact",
+    "schema:disambiguatingDescription": "service-contact/funding-source.rst",
     "schema:dateCreated": "2018-10-12",
     "schema:dateModified": "2016-10-12",
     "datatype": {
@@ -271,7 +272,7 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": [ "organisation_path", "practitioner_key" ],
+    "columnReference": [ "delivery_organisation_path", "practitioner_key" ],
     "reference": {
       "resource": "data/practitioners.csv",
       "columnReference": [ "organisation_path", "practitioner_key" ]
@@ -325,16 +326,16 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "headspace_funding_source",
+    "columnReference": "funding_source",
     "reference": {
-      "resource": "table/service-contact/headspace-funding-source.csv",
+      "resource": "table/service-contact/funding-source.csv",
       "columnReference": "id"
     }
   }, {
-    "columnReference": [ "delivery_organisation_path", "episode_key" ],
+    "columnReference": [ "delivery_organisation_path" ],
     "reference": {
-      "resource": "data/episodes.csv",
-      "columnReference": [ "organisation_path", "episode_key" ]
+      "resource": "data/organisations.csv",
+      "columnReference": [ "organisation_path" ]
     }
   }]
 }
