@@ -760,10 +760,10 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": [ "delivery_organisation_path", "episode_key" ],
+    "columnReference": [ "delivery_organisation_path" ],
     "reference": {
-      "resource": "data/episodes.csv",
-      "columnReference": [ "organisation_path", "episode_key" ]
+      "resource": "data/organisations.csv",
+      "columnReference": [ "organisation_path" ]
     }
   }, {
     "columnReference": "sdq_version",
