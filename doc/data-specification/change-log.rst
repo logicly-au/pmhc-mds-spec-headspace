@@ -30,9 +30,6 @@ Data Specification Change log
 
       * Renamed headspace Funding Source to :ref:`dfn-funding_source`
 
-      * Updated :ref:`dfn-funding_source` to add response 0 - PHN funded. **Note: This response should not be used for headspace uploads**
-
-
       * Added :ref:`dfn-delivery_organisation_path`
 
     * :ref:`k10p-data-elements`
