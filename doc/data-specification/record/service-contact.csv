@@ -107,7 +107,8 @@ METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 :3: Not known at this stage"
 "`Service Contact - Funding Source`_ (funding_source)
 
-",string,yes,":1: headspace Grant
+",string,yes,":0: PHN funded
+:1: headspace Grant
 :2: MBS
 :3: In Kind
 :4: Other Government Funding - Federal

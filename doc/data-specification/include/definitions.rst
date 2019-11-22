@@ -2448,6 +2448,7 @@ The source of funding for a service contact
 :Required: yes
 
 :Domain:
+  :0: PHN funded
   :1: headspace Grant
   :2: MBS
   :3: In Kind
