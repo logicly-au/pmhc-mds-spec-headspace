@@ -2298,7 +2298,7 @@ An indicator of whether the client participated, or intended to participate, in 
   as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
   
 
-:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
+:Source: `METeOR ID 494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 
@@ -2354,7 +2354,7 @@ The date of each mental health service contact between a health service provider
   - The service contact date must not be in the future.
   
 
-:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
+:Source: `METeOR ID 494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 ----------
 
@@ -2637,7 +2637,7 @@ The Australian postcode where the service contact took place.
     range 0200-0299 or 0800-9999.
   
 
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:Source: `METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
 
