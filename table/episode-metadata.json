@@ -516,5 +516,11 @@
       "resource": "table/episode/referrer-organisation-type.csv",
       "columnReference": "id"
     }
+  }, {
+    "columnReference": "continuity_of_support",
+    "reference": {
+      "resource": "table/episode/continuity-of-support.csv",
+      "columnReference": "id"
+    }
   }]
 }
