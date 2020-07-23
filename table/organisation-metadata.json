@@ -95,7 +95,7 @@
     "required": true
   },{
     "name": "organisation_start_date",
-    "titles": [ "organisation_start_date", "Start Date" ],
+    "titles": [ "organisation_start_date" ],
     "dc:title" : "Provider Organisation - Start Date",
     "schema:description": "The date on which a provider organisation started delivering services.",
     "schema:dateCreated": "2019-03-13",
@@ -109,7 +109,7 @@
     "required": true
   },{
     "name": "organisation_end_date",
-    "titles": [ "organisation_end_date", "End Date" ],
+    "titles": [ "organisation_end_date" ],
     "dc:title" : "Provider Organisation - End Date",
     "schema:description": "The date on which a provider organisation stopped delivering services.",
     "schema:dateCreated": "2019-03-13",
