@@ -14,7 +14,7 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model.svg
+.. figure:: figures/data-model-v3.0.svg
    :alt: headspace PMHC data model
 
    headspace data model *within the PMHC MDS*
@@ -24,7 +24,7 @@ Collection Occasion records.
 
 .. _collection-occasion-diagram:
 
-.. figure:: figures/collection-occasion-data-model.svg
+.. figure:: figures/collection-occasion-data-model-v3.0.svg
    :alt: headspace PMHC Collection Occasion data model
 
    headspace Collection Occasion data model *within the PMHC MDS*
