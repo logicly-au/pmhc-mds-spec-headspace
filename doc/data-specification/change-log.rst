@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+12/8/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Updated the data model diagram to more accurately reflect the model between
+      collection occasions and measures
+
 17/6/2019 - Version 2.0
 -----------------------
 
