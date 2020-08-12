@@ -6,6 +6,6 @@ if [[ "$?" == "0" ]]; then
   git remote remove publish
 fi
 
-git remote add origin git@github.com:strategicdata/pmhc-mds-spec-headspace.git
+git remote add publish git@github.com:strategicdata/pmhc-mds-spec-headspace.git
 
 git push publish
