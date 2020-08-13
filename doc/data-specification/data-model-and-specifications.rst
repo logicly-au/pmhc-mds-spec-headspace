@@ -19,18 +19,8 @@ Data model
 
    headspace data model *within the PMHC MDS*
 
-**Note:** :ref:`collection-occasion-diagram` for more details about
+**Note:** `PMHC MDS Collection Occasion records <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#collection-occasion-diagram>`_ for more details about
 Collection Occasion records.
-
-.. _collection-occasion-diagram:
-
-.. figure:: figures/collection-occasion-data-model-v3.0.svg
-   :alt: headspace PMHC Collection Occasion data model
-
-   headspace Collection Occasion data model *within the PMHC MDS*
-
-**Note:** See :ref:`data-model-diagram` for more details about how
-Collection Occasion records fit into the overall structure.
 
 .. _record-formats:
 
