@@ -13,6 +13,7 @@ headspace PMHC MDS Documentation
    The main documentation for the site is organized into several sections:
 
    * :ref:`data-docs`
+   * :ref:`user-docs`
 
    Getting Help
    ------------
@@ -30,6 +31,7 @@ headspace PMHC MDS Documentation
    :maxdepth: 3
 
    data-specification/index
+   user-documentation/index
 
 
 
