@@ -11,5 +11,3 @@ The user guide is regularly updated to reflect each release communication.
 .. toctree::
 
    access-and-password-user-guide
-   upload-user-guide
-   reports-user-guide
