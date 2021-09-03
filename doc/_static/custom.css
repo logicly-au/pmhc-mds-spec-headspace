@@ -93,9 +93,19 @@ a.headerlink {
     src:local("Arial"),url(arial.ttf) format("truetype");
 }
 
+/* Styles DL/DT/DD elements correctly */
+td > dl.field-list.simple > dt, dd > dl.field-list.simple > dt {
+    float:left
+}
+
+/* Fixes spacing issue when DT element is longer than 2 characters */
+dt {
+    padding-right: 1rem;
+}
+
 /* Shrinks images to fit when using prince */
 @page {
-	prince-shrink-to-fit: auto 
+	prince-shrink-to-fit: auto
 }
 
 @media print {
@@ -103,4 +113,3 @@ a.headerlink {
 		max-height: 297mm;
 	}
 }
-
