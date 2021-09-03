@@ -13,6 +13,7 @@ The date the measure was given.
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -50,6 +51,7 @@ The reason for the collection of the outcome measures on the identified Outcome 
   :1: Episode start
   :2: Review
   :3: Episode end
+
 :Notes:
   1 - Episode start
     Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
@@ -97,6 +99,7 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
@@ -164,6 +167,7 @@ In the last 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -190,6 +194,7 @@ In the last 4 weeks, about how often did you feel without hope?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -216,6 +221,7 @@ In the last 4 weeks, about how often did you feel restless or jumpy?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -242,6 +248,7 @@ In the last 4 weeks, about how often did you feel everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -268,6 +275,7 @@ In the last 4 weeks, about how often did you feel so sad that nothing could chee
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -289,6 +297,7 @@ The overall K5 score.
 
 :Domain:
   5 - 25, 99 = Not stated / Missing
+
 :Notes:
   The K5 Total score is based on the sum of K5 item 1 through 5 (range: 5-25).
   
@@ -316,6 +325,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -352,6 +362,7 @@ In the past 4 weeks, about how often did you feel tired out for no good reason?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -378,6 +389,7 @@ In the past 4 weeks, about how often did you feel nervous?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -404,6 +416,7 @@ In the past 4 weeks, about how often did you feel so nervous that nothing could 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -430,6 +443,7 @@ In the past 4 weeks, how often did you feel hopeless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -456,6 +470,7 @@ In the past 4 weeks, how often did you feel restless or fidgety?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -482,6 +497,7 @@ In the past 4 weeks, how often did you feel so restless you could not sit still?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -508,6 +524,7 @@ In the past 4 weeks, how often did you feel depressed?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -534,6 +551,7 @@ In the past 4 weeks, how often did you feel that everything was an effort?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -560,6 +578,7 @@ In the past 4 weeks, how often did you feel so sad that nothing could cheer you 
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -586,6 +605,7 @@ In the past 4 weeks, how often did you feel worthless?
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
   
@@ -607,6 +627,7 @@ In the past four weeks, how many days were you totally unable to work, study or 
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
   they are not required to answer questions 11-14. Where this question has not been
@@ -630,6 +651,7 @@ Aside from those days, in the past four weeks, how many days were you able to wo
 
 :Domain:
   0 - 28, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -653,6 +675,7 @@ In the past four weeks, how many times have you seen a doctor or any other healt
 
 :Domain:
   0 - 89, 99 = Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -681,6 +704,7 @@ In the past four weeks, how often have physical health problems been the main ca
   :4: Most of the time
   :5: All of the time
   :9: Not stated / Missing
+
 :Notes:
   When the client's responses to Q1-10 are all recorded as 1 'None of the time',
   they are not required to answer questions 11-14. Where this question has not been
@@ -704,6 +728,7 @@ The overall K10 score.
 
 :Domain:
   10 - 50, 99 = Not stated / Missing
+
 :Notes:
   The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
   Items 11 through 14 are excluded from the total because they are separate
@@ -735,6 +760,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -763,6 +789,7 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A combination of the Primary Health Network's (PHN's) Organisation Key and the
   Provider Organisation's Organisation Key separated by a colon.
@@ -815,6 +842,7 @@ The version of the SDQ collected.
   :PY201: Parent Report Measure 11-17 yrs, Follow Up version, Australian Version 1
   :YR101: Self report Version, 11-17 years, Baseline version, Australian Version 1
   :YR201: Self report Version, 11-17 years, Follow Up version, Australian Version 1
+
 :Notes:
   Domain values align with those collected in the NOCC dataset as defined at
   https://webval.validator.com.au/spec/NOCC/current/SDQ/SDQVer
@@ -836,6 +864,7 @@ SDQ - Conduct Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Conduct Problem Scale.
   
@@ -858,6 +887,7 @@ SDQ - Emotional Symptoms Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Emotional Symptoms Scale.
   
@@ -880,6 +910,7 @@ SDQ - Hyperactivity Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Hyperactivity Scale.
   
@@ -902,6 +933,7 @@ SDQ - Impact Score
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Impact Score.
   
@@ -924,6 +956,7 @@ SDQ - Peer Problem Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Peer Problem Scale.
   
@@ -946,6 +979,7 @@ SDQ - Prosocial Scale
 
 :Domain:
   0 - 10, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Prosocial Scale.
   
@@ -975,6 +1009,7 @@ Youth Self Report: I try to be nice to other people. I care about their feelings
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1004,6 +1039,7 @@ Youth Self Report: I am restless, I cannot stay still for long.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1033,6 +1069,7 @@ Youth Self Report: I get a lot of headaches, stomach-aches or sickness.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1062,6 +1099,7 @@ Youth Self Report: I usually share with others, for examples CDs, games, food.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1091,6 +1129,7 @@ Youth Self Report: I get very angry and often lose my temper.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1120,6 +1159,7 @@ Youth Self Report: I would rather be alone than with people of my age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1149,6 +1189,7 @@ Youth Self Report: I usually do as I am told.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1178,6 +1219,7 @@ Youth Self Report: I worry a lot.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1207,6 +1249,7 @@ Youth Self Report: I am helpful if someone is hurt, upset or feeling ill.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1236,6 +1279,7 @@ Youth Self Report: I am constantly fidgeting or squirming.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1265,6 +1309,7 @@ Youth Self Report: I have one good friend or more.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1294,6 +1339,7 @@ Youth Self Report: I fight a lot. I can make other people do what I want.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1323,6 +1369,7 @@ Youth Self Report: I am often unhappy, depressed or tearful.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1352,6 +1399,7 @@ Youth Self Report: Other people my age generally like me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1381,6 +1429,7 @@ Youth Self Report: I am easily distracted, I find it difficult to concentrate.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1410,6 +1459,7 @@ Youth Self Report: I am nervous in new situations. I easily lose confidence.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1439,6 +1489,7 @@ Youth Self Report: I am kind to younger people.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1468,6 +1519,7 @@ Youth Self Report: I am often accused of lying or cheating.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1497,6 +1549,7 @@ Youth Self Report: Other children or young people pick on me or bully me.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1526,6 +1579,7 @@ Youth Self Report: I often volunteer to help others (parents, teachers, children
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1555,6 +1609,7 @@ Youth Self Report: I think before I do things.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1584,6 +1639,7 @@ Youth Self Report: I take things that are not mine from home, school or elsewher
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1613,6 +1669,7 @@ Youth Self Report: I get along better with adults than with people my own age.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1642,6 +1699,7 @@ Youth Self Report: I have many fears, I am easily scared.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1671,6 +1729,7 @@ Youth Self Report: I finish the work I'm doing. My attention is good.
   :2: Certainly True
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1701,6 +1760,7 @@ Youth Self Report: Overall, do you think that you have difficulties in any of th
   :3: Yes - severe difficulties
   :7: Unable to rate (insufficient information)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1732,6 +1792,7 @@ Youth Self Report: How long have these difficulties been present?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   - PC101
@@ -1766,6 +1827,7 @@ Youth Self Report: Do the difficulties upset or distress you?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1797,6 +1859,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1828,6 +1891,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1859,6 +1923,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1890,6 +1955,7 @@ Youth Self Report: Do the difficulties interfere with your everyday life in the 
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1921,6 +1987,7 @@ Youth Self Report: Do the difficulties make it harder for those around you (fami
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions: All
   
@@ -1953,6 +2020,7 @@ Youth Self Report: 'Since coming to the service, are your problems:
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -1986,6 +2054,7 @@ Has coming to the service been helpful in other ways eg. providing information o
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2018,6 +2087,7 @@ Over the last 6 months have your child's teachers complained of fidgetiness, res
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2049,6 +2119,7 @@ Over the last 6 months have your child's teachers complained of poor concentrati
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2080,6 +2151,7 @@ Over the last 6 months have your child's teachers complained of acting without t
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2111,6 +2183,7 @@ Does your family complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2141,6 +2214,7 @@ Do your teachers complain about you having problems with overactivity or poor co
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2171,6 +2245,7 @@ Does your family complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2201,6 +2276,7 @@ Do your teachers complain about you being awkward or troublesome?
   :7: Unable to rate (insufficient information)
   :8: Not applicable (collection not required - item not included in the version collected, or SDQ Item 26 = 0)
   :9: Not stated / Missing
+
 :Notes:
   Required Versions:
   
@@ -2223,6 +2299,7 @@ List of tags for the collection occasion.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2253,6 +2330,7 @@ SDQ - Total Difficulties Score
 
 :Domain:
   0 - 40, 99 = Not stated / Missing
+
 :Notes:
   See `PMHC MDS SDQ items and Scale Summary scores <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html##scoring-the-sdq>`_ for instructions on scoring the Total Difficulties Score.
   
@@ -2277,6 +2355,7 @@ An indicator of whether the client participated, or intended to participate, in 
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   Service contacts are not restricted to in-person communication but can include
   telephone, video link or other forms of direct communication.
@@ -2298,7 +2377,7 @@ An indicator of whether the client participated, or intended to participate, in 
   as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
   
 
-:Source: `METeOR ID 494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
+:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 
@@ -2317,6 +2396,7 @@ The co-payment is the amount paid by the client per session.
 
 :Domain:
   0 - 999999.99
+
 :Notes:
   Up to 6 digits before the decimal point; up to 2 digits after the decimal
   point.
@@ -2342,6 +2422,7 @@ The date of each mental health service contact between a health service provider
 :Data type: date
 
 :Required: yes
+
 :Notes:
   For Date fields, data must be recorded in compliance with the standard format
   used across the National Health Data Dictionary; specifically, dates must be
@@ -2354,7 +2435,7 @@ The date of each mental health service contact between a health service provider
   - The service contact date must not be in the future.
   
 
-:Source: `METeOR ID 494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
+:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 ----------
 
@@ -2383,6 +2464,7 @@ The time from the start to finish of a service contact.
   :8: 106-120 mins
   :9: over 120 mins
   :99: Missing
+
 :Notes:
   For group sessions the time for client spent in the session is recorded for
   each client, regardless of the number of clients or third parties participating
@@ -2416,6 +2498,7 @@ An indication of whether the Service Contact is the final for the current Episod
   :1: No further services are planned for the client in the current episode
   :2: Further services are planned for the client in the current episode
   :3: Not known at this stage
+
 :Notes:
   Service providers should report this item on the basis of future planned or
   scheduled contacts with the client. Where this item is recorded as 1 (No
@@ -2476,6 +2559,7 @@ Whether an interpreter service was used during the Service Contact
   :1: Yes
   :2: No
   :9: Not stated
+
 :Notes:
   Interpreter services includes verbal language, non-verbal language and
   languages other than English.
@@ -2515,6 +2599,7 @@ How the service contact was delivered, as represented by a code.
   :2: Telephone
   :3: Video
   :4: Internet-based
+
 :Notes:
   0 - No contact took place
     Only use this code where the service contact is recorded as a no show.
@@ -2552,6 +2637,7 @@ Where an appointment was made for an intended participant(s), but the intended p
 :Domain:
   :1: Yes
   :2: No
+
 :Notes:
   1 - Yes
     The intended participant(s) failed to attend the appointment.
@@ -2581,6 +2667,7 @@ An indication of who participated in the Service Contact.
   :4: Other health professional or service provider
   :5: Other
   :9: Not stated
+
 :Notes:
   1 - Individual
     Code applies for Service Contacts delivered individually to a single client
@@ -2624,6 +2711,7 @@ The Australian postcode where the service contact took place.
 :Data type: string
 
 :Required: yes
+
 :Notes:
   A valid Australian postcode or 9999 if the postcode is unknown. The full list
   of Australian Postcodes can be found at `Australia Post
@@ -2637,7 +2725,7 @@ The Australian postcode where the service contact took place.
     range 0200-0299 or 0800-9999.
   
 
-:Source: `METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
 
@@ -2653,6 +2741,7 @@ List of tags for the service contact.
 :Data type: string
 
 :Required: no
+
 :Notes:
   A comma separated list of tags.
   
@@ -2695,6 +2784,7 @@ The main type of service provided in the service contact, as represented by the 
   :9: Psychosocial support
   :98: ATAPS
   :99: Missing
+
 :Notes:
   
   
@@ -2883,6 +2973,7 @@ Where the service contact was delivered, as represented by a code.
   :12: Aged care centre - non-residential
   :98: Not applicable (Service Contact Modality is not face to face)
   :99: Not stated
+
 :Notes:
   Values other than ‘Not applicable’ only to be specified when Service Contact
   Modality is ‘Face to Face’.
