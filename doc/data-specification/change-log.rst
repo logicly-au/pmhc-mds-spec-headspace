@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+9/9/2021
+--------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`dfn-measure_date` - Updated the :ref:`dfn-measure_date` validation so that it must not be
+    more than 7 days after `PMHC MDS Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#dfn-episode-end-date>`_
+
 23/9/2020
 ---------
 
