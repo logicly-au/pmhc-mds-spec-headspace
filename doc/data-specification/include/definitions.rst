@@ -27,7 +27,7 @@ The date the measure was given.
   
   - The measure date must not be before `PMHC MDS Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#dfn-referral-date>`_
   
-  - The measure date must not be after `PMHC MDS Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#dfn-episode-end-date>`_
+  - The measure date must not be more than 7 days after `PMHC MDS Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#dfn-episode-end-date>`_
   
   - The measure date must not be in the future.
   
