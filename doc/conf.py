@@ -65,7 +65,7 @@ def get_version():
    try:
       version = os.environ["GIT_VERSION"]
    except KeyError:
-      print "Please set the environment variable GIT_VERSION"
+      print("Please set the environment variable GIT_VERSION")
 
    return version
 
