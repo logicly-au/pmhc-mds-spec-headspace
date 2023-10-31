@@ -166,4 +166,4 @@ Download Specification Files
 Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:
 
-* `Specification zip <../_static/pmhcmds-spec-meta.zip>`_
+* `Specification zip <../_static/headspace-v2-spec-meta.zip>`_

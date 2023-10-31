@@ -2,7 +2,7 @@
 
 set -e
 
-filename=${@:-pmhcmds-spec-meta.zip}
+filename=${@:-headspace-v2-spec-meta.zip}
 
 # named pipe to capture version info (doesn't create version.txt as a physical file)
 GITSHA=$( git show -s --format=%H )
