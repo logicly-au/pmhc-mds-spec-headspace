@@ -5,7 +5,7 @@ Data model and specifications
 
 headspace specifications are an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Data model and specification rules still apply. These are available to be viewed at
-https://docs.pmhc-mds.com/data-specification/index.html.
+https://docs.pmhc-mds.com/projects/data-specification/en/latest/index.html.
 
 .. _data-model:
 
@@ -14,12 +14,12 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v3.0.svg
-   :alt: headspace PMHC data model
+.. figure:: figures/data-model-v4.0.svg
+   :alt: headspace v4.0 PMHC data model
 
    headspace data model *within the PMHC MDS*
 
-**Note:** `PMHC MDS Collection Occasion records <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#collection-occasion-diagram>`_ for more details about
+**Note:** `PMHC MDS Collection Occasion records <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#collection-occasion-diagram>`_ for more details about
 Collection Occasion records.
 
 .. _record-formats:
@@ -42,13 +42,7 @@ the type and version of the uploaded data.
 For this version of the specification the required content is shown in the
 following table:
 
-+--------------+------------+
-| key          | value      |
-+--------------+------------+
-| type         | HEADSPACE  |
-+--------------+------------+
-| version      | 2.0        |
-+--------------+------------+
+.. include:: shared/metadata-content.rst
 
 ----------
 
@@ -93,12 +87,21 @@ Same as standard `PMHC MDS Episode <https://docs.pmhc-mds.com/data-specification
 Service Contact
 ^^^^^^^^^^^^^^^
 
-See `PMHC MDS Service Contact <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#key-concepts-service-contact>`_ for definition of a service contact.
+Same as standard `PMHC MDS Service Contact <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#service-contact-data-elements>`_.
 
-Service contacts are managed by headspace via upload.
+----------
 
-.. csv-table:: Service contact record layout
-   :file: record/service-contact.csv
+.. _service-contact-practitioner-data-elements:
+
+Service Contact Practitioner
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See `PMHC MDS Service Contact Practitioner <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#service-contact-practitioner>`_ for definition of a service contact practitioner.
+
+Service contacts practitioners are managed by headspace via upload.
+
+.. csv-table:: Service contact practitioner record layout
+   :file: record/service-contact-practitioner.csv
    :header-rows: 1
 
 ----------
@@ -112,46 +115,54 @@ See `PMHC MDS Outcome Collection Occasion <https://docs.pmhc-mds.com/data-specif
 
 Outcome Collection Occasions are managed by headspace via upload.
 
+.. csv-table:: Collection Occasion record layout
+   :file: record/collection-occasion.csv
+   :header-rows: 1
+
+.. _measure-data-elements:
+
+Measures
+^^^^^^^^
+
+.. _episode_measures:
+
+Measures during an Episode
+""""""""""""""""""""""""""
+
+.. _iar-dst-data-elements:
+
+IAR-DST
+'''''''
+
+In the standard PMHC MDS data specification, the IAR-DST is recorded against the Intake record.
+headspace do not have the same concept of Intake, so the IAR-DST is being recorded against the
+Episode record.
+
+.. csv-table:: IAR-DST record layout
+   :file: record/iar-dst-measure.csv
+   :header-rows: 1
+
+
 .. _k10p-data-elements:
 
 K10+
 """"
 
-Reporting individual item scores will eventually be required.
-In the short term, respondents can either report all 14 item scores or report
-the K10 total score as well as item scores for the 4 extra items in the K10+.
-
-.. csv-table:: K10+ record layout
-   :file: record/k10p-collection-occasion.csv
-   :header-rows: 1
-
-When the client’s responses to Q1-10 are all recorded as 1 'None of the time',
-they are not required to answer questions 11-14. Where a question has not been
-answered please select a response of 'Not stated / missing'.
+Same as standard `PMHC MDS K10+ <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#k10p-data-elements>`_.
 
 .. _k5-data-elements:
 
 K5
 ""
 
-Reporting individual item scores will eventually be required.
-In the short term, respondents can either report all 5 item scores or report
-the K5 total score.
-
-.. csv-table:: K5 record layout
-   :file: record/k5-collection-occasion.csv
-   :header-rows: 1
+Same as standard `PMHC MDS K10+ <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#k105-data-elements>`_.
 
 .. _sdq-data-elements:
 
 SDQ
 """
 
-Please refer to the SDQ notes at `PMHC MDS SDQ <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#sdq-data-elements>`_
-
-.. csv-table:: SDQ record layout
-   :file: record/sdq-collection-occasion.csv
-   :header-rows: 1
+Same as standard `PMHC MDS K10+ <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#sdq-data-elements>`_.
 
 ----------
 
@@ -166,4 +177,11 @@ Download Specification Files
 Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:
 
-* `Specification zip <../_static/pmhcmds-spec-meta.zip>`_
+* `Specification zip <../_static/pmhcmds-spec-headspace-meta.zip>`_
+
+These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/.
+
+They are used:
+
+* to generate the :ref:`record-formats` and :ref:`definitions` sections of the data specification documentation
+* in the first pass of upload validations
