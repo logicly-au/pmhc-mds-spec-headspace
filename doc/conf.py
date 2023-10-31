@@ -15,11 +15,21 @@
 import sys
 import os
 import shlex
+import configparser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+
+# -- Read important params from environment
+
+global spec_conf
+spec_conf = configparser.ConfigParser()
+spec_conf.read('./version.conf')
+
+spec_name = spec_conf['DEFAULT']['SPEC_NAME']
+version   = spec_conf['DEFAULT']['SPEC_VERSION']
 
 # -- General configuration ------------------------------------------------
 
@@ -57,22 +67,6 @@ author = u'PMHC MDS Working Group'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-
-def get_version():
-
-   version = 'v2.0.0'
-
-   try:
-      version = os.environ["GIT_VERSION"]
-   except KeyError:
-      print("Please set the environment variable GIT_VERSION")
-
-   return version
-
-# The short X.Y version.
-# version = get_version().lstrip('v').rstrip()
-
-version = "Version 2.0.0"
 
 # The full version, including alpha/beta/rc tags.
 release = version
@@ -162,6 +156,12 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static', 'data-specification/_data/_orig']
 
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
+
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
@@ -223,7 +223,7 @@ html_extra_path = ['CNAME', '.nojekyll']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PMHC'
+htmlhelp_basename = 'PMHC-MDS-headspace-Data-Specification'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -245,7 +245,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PMHC.tex', u'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMH-MDS-headspace-data-spec.tex', u'Primary Mental Health Care Minimum Dataset headspace specification',
    author, 'manual'),
 ]
 
@@ -342,8 +342,3 @@ numfig = True
 # numfig_secnum_depth = 1
 
 #html_style = 'default.css'
-
-# CSS overides
-def setup(app):
-#   app.add_javascript('https://hypothes.is/embed.js')
-   app.add_stylesheet("custom.css")

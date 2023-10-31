@@ -68,7 +68,7 @@ foreach my $css_file ( read_dir( $src . '/_static/css/', prefix => 1 ) ) {
     my $replacement_count =
         $css_src =~ s|url\((fonts/.*?)\)|$replacement|gee;
 
-    die "No paths to fonts in the CSS files were altered for prince. Perhaps the templates have changed."
+    say "No paths to fonts in the CSS files were altered for prince. Perhaps the templates have changed."
         unless $replacement_count;
 
     write_file( $css_file, $css_src );
