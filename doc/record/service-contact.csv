@@ -1,24 +1,22 @@
-"Data Element (Field Name)","Type (min,max)","Format / Values"
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
 "`Organisation Path`_ (organisation_path)
 
-",string,"A sequence of colon separated Organisation Codes that fully specifies the upload organisation."
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation that is responsible for the Episode of Care."
 "`Service Contact Key`_ (service_contact_key)
 
-","string (2,50)","This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation."
+","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the Provider Organisation."
 "`Episode Key`_ (episode_key)
 
-","string (2,50)","This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
-"`Practitioner Key`_ (practitioner_key)
-
-","string (2,50)","A unique identifier for a practitioner within the provider organisation."
-"`Service Contact - Date`_ (service_contact_date)
+","string (2,50)",yes,"This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation."
+"`Service Contact Date`_ (service_contact_date)
 
 
 
-METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",date,"The date of each mental health service contact between a health service provider and patient/client."
-"`Service Contact - Type`_ (service_contact_type)
+METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__",date,yes,"The date of each mental health service contact between a health service provider and patient/client."
+"`Service Contact Type`_ (service_contact_type)
 
-",string,":1: Assessment
+",string,yes,":0: No contact took place
+:1: Assessment
 :2: Structured psychological intervention
 :3: Other psychological intervention
 :4: Clinical care coordination/liaison
@@ -26,44 +24,49 @@ METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 :6: Child or youth specific assistance NEC
 :7: Suicide prevention specific assistance NEC
 :8: Cultural specific assistance NEC
-:98: ATAPS"
-"`Service Contact - Postcode`_ (service_contact_postcode)
+:9: Psychosocial support
+:98: ATAPS
+:99: Missing"
+"`Postcode`_ (service_contact_postcode)
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,"The Australian postcode where the service contact took place."
-"`Service Contact - Modality`_ (service_contact_modality)
+METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode where the service contact took place."
+"`Modality`_ (service_contact_modality)
 
-",string,":1: Face to Face
+",string,yes,":0: No contact took place
+:1: Face to Face
 :2: Telephone
 :3: Video
 :4: Internet-based"
-"`Service Contact - Participants`_ (service_contact_participants)
+"`Participants`_ (service_contact_participants)
 
-",string,":1: Individual client
+",string,yes,":1: Individual client
 :2: Client group
 :3: Family / Client Support Network
 :4: Other health professional or service provider
 :5: Other
 :9: Not stated"
-"`Service Contact - Venue`_ (service_contact_venue)
+"`Venue`_ (service_contact_venue)
 
-",string,":1: Client's Home
+",string,yes,":1: Client's Home
 :2: Service provider's office
 :3: GP Practice
 :4: Other medical practice
 :5: Headspace Centre
 :6: Other primary care setting
 :7: Public or private hospital
-:8: Aged care centre
+:8: Residential aged care facility
 :9: School or other educational centre
 :10: Client's Workplace
 :11: Other
+:12: Aged care centre - non-residential
 :98: Not applicable (Service Contact Modality is not face to face)
 :99: Not stated"
-"`Service Contact - Duration`_ (service_contact_duration)
+"`Duration`_ (service_contact_duration)
 
-",string,":1: 0-15 mins
+",string,yes,":0: No contact took place
+:1: 1-15 mins
 :2: 16-30 mins
 :3: 31-45 mins
 :4: 46-60 mins
@@ -71,30 +74,71 @@ METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 :6: 76-90 mins
 :7: 91-105 mins
 :8: 106-120 mins
-:9: over 120 mins"
-"`Service Contact - Copayment`_ (service_contact_copayment)
+:9: over 120 mins
+:99: Missing"
+"`Copayment`_ (service_contact_copayment)
 
-",number,"0 - 999999"
-"`Service Contact - Client Participation Indicator`_ (service_contact_participation_indicator)
+",number,yes,"0 - 999999.99"
+"`Client Participation Indicator`_ (service_contact_participation_indicator)
 
 
 
-METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",string,":1: Yes
+METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__",string,yes,":1: Yes
 :2: No"
-"`Service Contact - Interpreter Used`_ (service_contact_interpreter)
+"`Interpreter Used`_ (service_contact_interpreter)
 
-",string,":1: Yes
+",string,yes,":1: Yes
 :2: No
 :9: Not stated"
-"`Service Contact - No Show`_ (service_contact_no_show)
+"`No Show`_ (service_contact_no_show)
 
-",string,":1: Yes
+",string,yes,":1: Yes
 :2: No"
-"`Service Contact - Final`_ (service_contact_final)
+"`Final Service Contact`_ (service_contact_final)
 
-",string,":1: No further services are planned for the client in the current episode
+",string,yes,":1: No further services are planned for the client in the current episode
 :2: Further services are planned for the client in the current episode
 :3: Not known at this stage"
-"`Service Contact - Tags`_ (service_contact_tags)
+"`Start Time`_ (service_contact_start_time)
 
-",string,"List of tags for the service contact."
+",time,yes,"The start time of each mental health service contact between a health service provider and patient/client."
+"`Funding Source`_ (funding_source)
+
+",string,yes,":0: Flexible funding pool - Not Otherwise Stated
+:11: Flexible funding pool - Low intensity
+:12: Flexible funding pool - Youth Severe
+:13: Flexible funding pool - Child and Youth
+:14: Flexible funding pool - Psychological therapies for hard to reach
+:15: Flexible funding pool - Services for People with Severe Mental Illness
+:16: Flexible funding pool - Suicide Prevention - Indigenous
+:17: Flexible funding pool - Suicide Prevention - General
+:18: Indigenous Mental Health
+:19: Commonwealth Psychosocial Support
+:20: Psychological Treatment in Residential Aged Care Facilities
+:21: Emergency Response - Bushfire Recovery 2020
+:22: Emergency Response - Flood 2022
+:23: Head to Health program
+:24: Head to Health Kids Hubs
+:25: Norfolk Island
+:26: National Suicide Prevention Trial
+:27: Way Back Support Service
+:60: headspace Grant
+:61: MBS
+:62: In Kind
+:63: Other Government Funding - State: EMHSS
+:64: Other Government Funding - State: onespace
+:65: Other Government Funding - State: Victorian Pathways Integration - headspace/ CYMHS
+:66: Other Government Funding - State: NSW COVID Support
+:67: Other Government Funding - State: NSW COVID Recovery
+:68: Other Government Funding - State: Bilaterals - Service Integration
+:69: Other Government Funding - State: Other State
+:70: Other Government Funding - Federal: VIC COVID-19
+:71: Other Government Funding - Federal: NSW COVID Support
+:72: Other Government Funding - Federal: Early Career Program
+:73: Other Government Funding - Federal: Other Federal
+:97: Other funding source – no Commonwealth Funding
+:98: Unknown/Not stated
+:99: Missing"
+"`Service Contact Tags`_ (service_contact_tags)
+
+",string,"—","List of tags for the service contact."

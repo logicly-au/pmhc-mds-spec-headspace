@@ -13,7 +13,7 @@ This will:
 
 * create restructured text from the metadata files
 * move generated content into the correct locations
-* create zip of spec metadata (csv + json files) inside data-specification
+* create zip of spec metadata (csv + json files) 
 * run sphinx to generate the html output in doc/build/html
 
 
@@ -23,4 +23,22 @@ Run the following script to publish the locally built content (see above).
 
 ```
 ./scripts/publish.sh
+```
+
+
+
+## Commands useful for checking integrity/completeness of schema files
+
+Find files referenced files that don't exist:
+```
+cat headspace-metadata.json | grep tableSchema | cut -d: -f2 | sort | uniq | xargs -n1 -I{} cat {} > /dev/null
+```
+
+
+## Commands useful for creating xlsx Files
+```
+./scripts/csv2xlsx.pl --context=intake doc/_static/example-files/
+./scripts/csv2xlsx.pl --context=treatment doc/_static/example-files/
+./scripts/csv2xlsx.pl --context=combined doc/_static/example-files/
+./scripts/csv2xlsx.pl --delete doc/_static/example-files/
 ```

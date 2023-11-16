@@ -20,7 +20,7 @@ use Data::Dumper;
 
 use constant METEOR_URL => 'http://meteor.aihw.gov.au/content/index.phtml/itemId/';
 
-use constant DATA_SPEC_PATH => 'doc/data-specification/';
+use constant DATA_SPEC_PATH => 'doc/';
 
 use version; our $VERSION = qv('1');
 
