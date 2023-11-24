@@ -39,6 +39,17 @@
     },
     "required": true
   },{
+    "name": "delivery_organisation_path",
+    "titles": [ "delivery_organisation_path" ],
+    "dc:title": "Delivery Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation-path.rst",
+    "schema:dateCreated": "2019-07-17",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "practitioner_key",
     "titles": [ "practitioner_key" ],
     "dc:title": "Practitioner Key",
@@ -49,17 +60,6 @@
       "minLength": 2,
       "maxLength": 50
       },
-    "required": true
-  },{
-    "name": "delivery_organisation_path",
-    "titles": [ "delivery_organisation_path" ],
-    "dc:title": "Delivery Organisation Path",
-    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
-    "schema:disambiguatingDescription": "type/organisation-path.rst",
-    "schema:dateCreated": "2019-07-17",
-    "datatype": {
-      "base": "string"
-    },
     "required": true
   },{
     "name": "primary_practitioner_indicator",
@@ -80,7 +80,7 @@
       "columnReference": [ "organisation_path", "service_contact_key" ]
     }
   },{
-    "columnReference": [ "organisation_path", "practitioner_key" ],
+    "columnReference": [ "delivery_organisation_path", "practitioner_key" ],
     "reference": {
       "resource": "data/practitioners.csv",
       "columnReference": [ "organisation_path", "practitioner_key" ]

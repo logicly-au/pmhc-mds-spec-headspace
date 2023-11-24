@@ -232,12 +232,6 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": [ "delivery_organisation_path", "practitioner_key" ],
-    "reference": {
-      "resource": "data/practitioners.csv",
-      "columnReference": [ "organisation_path", "practitioner_key" ]
-    }
-  }, {
     "columnReference": "service_contact_modality",
     "reference": {
       "resource": "table/service-contact/modality.csv",
@@ -290,12 +284,6 @@
     "reference": {
       "resource": "table/service-contact/funding-source.csv",
       "columnReference": "id"
-    }
-  }, {
-    "columnReference": [ "delivery_organisation_path" ],
-    "reference": {
-      "resource": "data/organisations.csv",
-      "columnReference": [ "organisation_path" ]
     }
   }]
 }
