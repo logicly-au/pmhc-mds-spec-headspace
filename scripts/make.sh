@@ -7,26 +7,23 @@ source doc/version.conf
 export SPEC_NAME
 export SPEC_VERSION
 
-source config.sh
+source doc/config.env
 
 if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
 
 docker pull docker.sdlocal.net/csvw/metadata2rst:release
-#docker pull stratdat/sphinx:production
-docker pull sphinxdoc/sphinx
 docker pull stratdat/sphinx-html2pdf:production
 
-
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
-  --meta=${METADATA_FILE} \
+docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:release \
+  --meta="${METADATA_FILE}" \
   --record_match "${RECORD_MATCH}"
 
 # make zip file
 scripts/metadata2zip.sh ${SPEC_ZIP_FILE}
 # mv new zip to data-specification folder
-mv ${SPEC_ZIP_FILE} doc/_static/
+mv "${SPEC_ZIP_FILE}" doc/_static/
 
 pushd .
 cd doc
@@ -37,21 +34,21 @@ cp -rf ../data _data
 GIT_VERSION=$(git describe --tags --always)
 
 echo "Building PDF"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make singlehtml
-
-#docker run --rm -v `pwd`:/mnt/workdir --workdir /mnt/workdir \
-#    sphinxdoc/sphinx sphinx-build -M html . build
+docker compose run \
+  --build \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make singlehtml
 
 popd
 
 echo "Optimising images"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+docker run --rm -e GIT_VERSION -v "$(pwd):/mnt/workdir" \
   --workdir /mnt/workdir/doc/build/singlehtml/_images \
   stratdat/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+docker run --rm -e GIT_VERSION -v "$(pwd):/mnt/workdir" \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
@@ -60,7 +57,9 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 pushd .
 cd doc
 
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make html
+docker compose run \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make html
 
 popd
