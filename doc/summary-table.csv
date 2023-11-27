@@ -2,8 +2,8 @@ Metadata,Episode,"Service Contact","Service Contact Practitioner","Collection Oc
 Key,"Organisation Path","Organisation Path","Organisation Path","Organisation Path"
 Value,"Episode Key","Service Contact Key","Service Contact Practitioner Key","Collection Occasion Key"
 ,"Client Key","Episode Key","Service Contact Key","Episode Key"
-,"Episode End Date","Service Contact Date","Practitioner Key","Delivery Organisation Path"
-,"Client Consent to Anonymised Data","Service Contact Type","Delivery Organisation Path","Collection Occasion Date"
+,"Episode End Date","Service Contact Date","Delivery Organisation Path","Delivery Organisation Path"
+,"Client Consent to Anonymised Data","Service Contact Type","Practitioner Key","Collection Occasion Date"
 ,"Episode Completion Status",Postcode,"Primary Practitioner Indicator","Collection Occasion Reason"
 ,"Referral Date",Modality,,"Collection Occasion Tags"
 ,"Program Type",Participants
