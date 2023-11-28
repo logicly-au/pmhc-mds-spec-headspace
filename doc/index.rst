@@ -1,5 +1,5 @@
-headspace PMHC MDS Documentation
-================================
+Draft headspace PMHC MDS Documentation
+======================================
 
 Version |version|
 
@@ -29,6 +29,7 @@ Version |version|
 
    data-model-and-specifications
    upload-specification
+   validation-rules
    change-log
 
 

@@ -55,7 +55,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'headspace PMHC MDS extension'
+project = u'Draft headspace PMHC MDS extension'
 copyright = u'2023, Australian Government - Department of Health and Aged Care'
 author = u'PMHC MDS Working Group'
 
