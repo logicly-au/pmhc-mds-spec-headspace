@@ -3,7 +3,7 @@
 # Exit if anything errors
 set -e
 
-source doc/version.conf
+source doc/config.env
 export SPEC_NAME
 export SPEC_VERSION
 
@@ -25,8 +25,8 @@ echo "Making example files"
 pushd .
 cd doc/_static/example-files
 rm -fv *.zip
-zip HEADSPACE-4-0-centre.zip centre/*
-zip HEADSPACE-4-0-centre-delete.zip centre-delete/*
+zip ${SPEC_NAME}-${SPEC_VERSION}-centre.zip centre/*
+zip ${SPEC_NAME}-${SPEC_VERSION}-centre-delete.zip centre-delete/*
 popd
 
 # make zip file

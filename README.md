@@ -48,8 +48,6 @@ Refer to csvlint/README.md
 
 ## Commands useful for creating xlsx Files
 ```
-./scripts/csv2xlsx.pl --context=intake doc/_static/example-files/
-./scripts/csv2xlsx.pl --context=treatment doc/_static/example-files/
-./scripts/csv2xlsx.pl --context=combined doc/_static/example-files/
+./scripts/csv2xlsx.pl --context=centre doc/_static/example-files/
 ./scripts/csv2xlsx.pl --delete doc/_static/example-files/
 ```

@@ -5,6 +5,7 @@ use Getopt::Long;
 use Excel::Writer::XLSX;
 use Text::CSV_XS;
 use Tie::IxHash;
+use Dotenv -load => 'doc/config.env';
 
 use constant usage => <<'EOT'
 csv2xlsx.pl [options] [example_file_directory]
@@ -17,7 +18,8 @@ EOT
     ;
 our ($example_dir, $help, $delete, $context);
 
-my $version = "4-0";
+my $spec_name = $ENV{"SPEC_NAME"};
+my $spec_version = $ENV{"SPEC_VERSION"};
 
 GetOptions(
   'help|?|h'  => \$help,
@@ -85,7 +87,7 @@ if ($delete) {
 
 }
 
-my $filename = "HEADSPACE-$version-$context.xlsx";
+my $filename = "$spec_name-$spec_version-$context.xlsx";
 $workbook  = Excel::Writer::XLSX->new( "$example_dir/$filename" );
 
 # Create a new CSV parsing object
