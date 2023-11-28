@@ -188,6 +188,15 @@ Same as standard `PMHC MDS Practitioner file format <https://docs.pmhc-mds.com/p
 
 Example Practitioner files can be found in any of the example files at :ref:`example-upload-files`.
 
+.. _deleting-records:
+
+Deleting records
+----------------
+
+Please refer to `PMHC MDS Deleting records <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#deleting-records>`_
+
+Example files showing how to delete via upload can be found in any of the example files at :ref:`example-upload-files`.
+
 .. _example-upload-files:
 
 Example Upload files
@@ -210,17 +219,6 @@ Each of the example files assumes the following organisation structure:
   :header-rows: 1
 
 
-.. _deleting-records:
-
-Deleting records
-^^^^^^^^^^^^^^^^
-
-Please refer to `PMHC MDS Deleting records <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#deleting-records>`_
-
-Example files showing how to delete via upload:
-
-- `XLSX file containing all the worksheets <../_static/example-files/headspace-4-0-delete.xlsx>`_.
-- `CSV zip containing all the csv files  <_static/example-files/headspace-4-0-delete.zip>`_.
 
 Frequently Asked Questions
 --------------------------

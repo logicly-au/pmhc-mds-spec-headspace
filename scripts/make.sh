@@ -23,6 +23,15 @@ docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
   --meta=${METADATA_FILE} \
   --record_match "${RECORD_MATCH}"
 
+# make example zip and xlsx Files
+echo "Making example files"
+pushd .
+cd doc/_static/example-files
+rm -fv *.zip
+zip HEADSPACE-4-0-centre.zip centre/*
+zip HEADSPACE-4-0-centre-delete.zip centre-delete/*
+popd
+
 # make zip file
 scripts/metadata2zip.sh ${SPEC_ZIP_FILE}
 # mv new zip to data-specification folder
