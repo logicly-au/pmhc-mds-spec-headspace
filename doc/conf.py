@@ -13,8 +13,8 @@
 # serve to show the default.
 
 import sys
-import os
-#from dotenv import load_dotenv
+from os import getenv
+from dotenv import load_dotenv
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -23,13 +23,9 @@ import os
 
 # -- Read important params from environment
 
-#load_dotenv()
-
-#spec_name = os.getenv('SPEC_NAME')
-#version   = os.getenv('SPEC_VERSION')
-
-spec_name = 'HEADSPACE'
-version = '4.0.0'
+load_dotenv('config.env')
+spec_name = getenv('SPEC_NAME')
+version   = getenv('SPEC_VERSION')
 
 # -- General configuration ------------------------------------------------
 
@@ -76,7 +72,7 @@ release = version
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "English"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -298,7 +294,7 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+on_rtd = getenv('READTHEDOCS', None) == 'True'
 if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
@@ -324,6 +320,7 @@ numfig = True
 #html_style = 'default.css'
 
 # CSS overides
-def setup(app):
+#def setup(app):
 #   app.add_javascript('https://hypothes.is/embed.js')
-   app.add_stylesheet("custom.css")
+# add_stylesheet is no longer supported. Not sure what replacement is?
+#   app.add_stylesheet("custom.css")
