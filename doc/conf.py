@@ -13,7 +13,7 @@
 # serve to show the default.
 
 import sys
-from os import getenv
+from os import environ
 from dotenv import load_dotenv
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -24,8 +24,8 @@ from dotenv import load_dotenv
 # -- Read important params from environment
 
 load_dotenv('config.env')
-spec_name = getenv('SPEC_NAME')
-version   = getenv('SPEC_VERSION')
+spec_name = environ.get('SPEC_NAME')
+version   = environ.get('SPEC_VERSION')
 
 # -- General configuration ------------------------------------------------
 
@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Draft headspace PMHC MDS extension'
-copyright = u'2023, Australian Government - Department of Health and Aged Care'
+copyright = u'2024, Australian Government - Department of Health and Aged Care'
 author = u'PMHC MDS Working Group'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -233,7 +233,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PMHC.tex', u'Primary Mental Health Care Minimum Dataset specification',
+  (master_doc, 'PMHC-MDS-headspace-data-spec.tex', u'Primary Mental Health Care Minimum Dataset headspace specification',
    author, 'manual'),
 ]
 
@@ -294,7 +294,7 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
-on_rtd = getenv('READTHEDOCS', None) == 'True'
+on_rtd = environ.get('READTHEDOCS', None) == 'True'
 if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
@@ -307,7 +307,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # For substitutions in docs
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
 
-copyright = str(2023) + ", " + author
+copyright = str(2024) + ", " + author
 download_pdf = ":download:`PDF </_static/" + spec_name + "-" + version + ".pdf>`"
 
 rst_epilog = """

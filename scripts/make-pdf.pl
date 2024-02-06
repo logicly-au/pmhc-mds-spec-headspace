@@ -46,7 +46,7 @@ createTOC( $tree );
 fixLinks( $tree );
 #fixExternalLinks( $tree ); Turned off as sometimes we need the URL contextually
 
-write_file( $src . '/index_pdf.html', $tree->as_HTML());
+write_file( $src . '/index-pdf.html', $tree->as_HTML());
 
 say "Altering CSS font references";
 # Fix the font references in CSS
@@ -83,9 +83,8 @@ say "Sending to Prince";
 my $client = SD::PrinceXML::Client->new(
     webservice       => $webservice,
     send_literal_url => 0,
-    url              => 'file://' . $src . '/index_pdf.html'
+    url              => 'file://' . $src . '/index-pdf.html'
 );
-
 
 # Send the fonts
 addFontDir($client, $src . '/_static/css', 'fonts' );

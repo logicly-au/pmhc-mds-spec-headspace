@@ -7,8 +7,6 @@ source doc/config.env
 export SPEC_NAME
 export SPEC_VERSION
 
-source doc/config.env
-
 if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
@@ -42,7 +40,7 @@ cp -rf ../data _data
 
 GIT_VERSION=$(git describe --tags --always)
 
-echo "Building PDF"
+#echo "Building PDF"
 docker compose run \
   --build \
   -e GIT_VERSION \
@@ -52,12 +50,12 @@ docker compose run \
 popd
 
 echo "Optimising images"
-docker run --rm -e GIT_VERSION -v "$(pwd):/mnt/workdir" \
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   --workdir /mnt/workdir/doc/build/singlehtml/_images \
   stratdat/sphinx-html2pdf:production \
   find . -name *.png -exec pngquant --force --output {} 8 {} \;
 
-docker run --rm -e GIT_VERSION -v "$(pwd):/mnt/workdir" \
+docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
   --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
