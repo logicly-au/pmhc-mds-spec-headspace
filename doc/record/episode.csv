@@ -31,12 +31,7 @@ METeOR: `730859 <http://meteor.aihw.gov.au/content/index.phtml/itemId/730859>`__
 ",date,yes,"The date the referrer made the referral."
 "`Program Type`_ (program_type)
 
-",string,yes,":1: Flexible Funding Pool
-:2: Head to Health
-:3: AMHC
-:4: Psychosocial
-:5: Bushfire Recovery 2020
-:6: headspace"
+",string,yes,":6: headspace"
 "`Principal Focus of Treatment Plan`_ (principal_focus)
 
 ",string,yes,":1: Psychological therapy
