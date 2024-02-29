@@ -23,8 +23,9 @@ Service Contact Practitioner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In addition to the `standard Service Contact Practitioner rules <https://docs.pmhc-mds.com/projects/data-specification/en/v4/validation-rules.html#service-contact-practitioner>`_:
-  1. :ref:`dfn-practitioner_key` must be an existing PMHC practitioner
-     within the PMHC MDS at the existing Organisation with :ref:`dfn-organisation_path` the same as :ref:`dfn-delivery_organisation_path`
+  1. :ref:`dfn-delivery_organisation_path` and :ref:`dfn-practitioner_key` must match to the 
+     :ref:`dfn-organisation_path` and :ref:`dfn-practitioner_key` of an existing PMHC practitioner
+     within the PMHC MDS
 
 .. _collection-occasion-current-validations:
 
