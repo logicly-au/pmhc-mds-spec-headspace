@@ -24,9 +24,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 - The referral date for Episodes must not be before 1st January 2014.
 - The referral date must not be in the future.
 
-Referral date was optional in specifications prior to Version 4. In Version 4
-referral date has been made mandatory. In order to export and re-upload episode data
-that was uploaded or entered prior to Version 4 the value '09099999' will be
-used in data exports and allowed for existing episode data without a referral date.
-See `Episode Validations <https://docs.pmhc-mds.com/projects/data-specification/en/v4/validation-rules.html#episode>`_ for rules on
-how this value may be used.
+Referral date was optional in specifications prior to Version 4. In the default
+PMHC MDS Version 4 specification referral date has been made mandatory. In order to
+support the mapping of headspace data, this extension will allow the value '09099999'
+to be used if the date the activity was performed is unknown.
