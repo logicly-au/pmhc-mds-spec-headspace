@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+21/8/2024
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Updated :ref:`dfn-referral_date` to allow '09099999'
+
 23/2/2024
 ---------
 

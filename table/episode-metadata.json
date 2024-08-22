@@ -95,6 +95,7 @@
       "format": "dMMyyyy",
       "minimum": "2013-01-01"
     },
+    "schema:dateMissingUnknown": "9999-09-09",
     "required": true
   },{
     "name": "program_type",
