@@ -3,6 +3,20 @@
 Data Specification Change log
 =============================
 
+22/8/2024
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Updated :ref:`intake-data-elements` to document that only '6: headspace' is allowed for Intake Program Type.
+
+  * :ref:`data-model`
+
+    * Updated :ref:`data-model-diagram` to fix the direction of the relationship
+      between Intake Episode and Intake
+
 21/8/2024
 ---------
 

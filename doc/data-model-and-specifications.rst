@@ -86,7 +86,13 @@ Same as standard `PMHC MDS Client <https://docs.pmhc-mds.com/data-specification/
 Intake
 ^^^^^^
 
-Same as standard `PMHC MDS Intake <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#intake-data-elements>`_.
+See `PMHC MDS Intake <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#intake>`_ for definition of an intake.
+
+Intakes are managed by headspace via upload.
+
+.. csv-table:: Intake record layout
+   :file: record/intake.csv
+   :header-rows: 1
 
 ----------
 
