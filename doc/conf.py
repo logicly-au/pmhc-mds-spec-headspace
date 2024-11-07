@@ -55,7 +55,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Draft headspace PMHC MDS extension'
+project = u'headspace PMHC MDS extension'
 copyright = u'2024, Australian Government - Department of Health and Aged Care'
 author = u'PMHC MDS Working Group'
 
@@ -310,7 +310,6 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme_options = {
        'navigation_depth': 4,
     }
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # For substitutions in docs
 # see https://github.com/hoccleve-archive/hocl.tk/blob/70b71b5a265d0b1d64c5cb6e43b686d03ead4078/docs/conf.py#L48
