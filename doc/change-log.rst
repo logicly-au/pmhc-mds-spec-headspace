@@ -3,8 +3,8 @@
 Data Specification Change log
 =============================
 
-22/8/2024
----------
+22/8/2024 - Version 4.0
+-----------------------
 
 * :ref:`data-model-and-specifications`
 

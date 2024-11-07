@@ -1,5 +1,5 @@
-Draft headspace PMHC MDS Documentation
-======================================
+headspace PMHC MDS Documentation
+================================
 
 Version |version|
 
