@@ -1,6 +1,13 @@
 headspace PMHC MDS Documentation
 ================================
 
+Version |version|
+
+.. warning::
+   
+   As of 24 October 2024, the PMHC MDS accepts uploads in the (`headspace version 4.0 <https://docs.pmhc-mds.com/projects/data-specification-headspace/en/v4/>`__)
+   format. Uploads in this version 2.0 format are no longer accepted.
+
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
