@@ -2,7 +2,7 @@
 
 Build csvlint via
 
-  `docker-compose build`
+  `docker compose build`
 
 Copy
 
@@ -15,7 +15,7 @@ set the $DATA_DIR env var appropriately:
 
 then validate with
 
-  `docker-compose run csvlint`
+  `docker compose run csvlint`
 
 To validate a different set of example files set the $DATA_DIR directory again:
 
@@ -23,7 +23,7 @@ To validate a different set of example files set the $DATA_DIR directory again:
 
  then validate with
 
-   `docker-compose run csvlint`
+   `docker compose run csvlint`
 
 ## Notes
 

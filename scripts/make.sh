@@ -3,18 +3,20 @@
 # Exit if anything errors
 set -e
 
-source doc/config.env
+source doc/version.env
 export SPEC_NAME
 export SPEC_VERSION
+
+source config.sh
 
 if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
 
-docker pull docker.sdlocal.net/csvw/metadata2rst:release
+docker pull docker.sdlocal.net/csvw/metadata2rst:multiplatform
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:release \
+docker run --rm -v "$(pwd):/mnt/cwd" docker.sdlocal.net/csvw/metadata2rst:multiplatform \
   --meta="${METADATA_FILE}" \
   --record_match "${RECORD_MATCH}"
 
@@ -24,7 +26,7 @@ pushd .
 cd doc/_static/example-files
 rm -fv *.zip
 zip ${SPEC_NAME}-${SPEC_VERSION}-centre.zip centre/*
-zip ${SPEC_NAME}-${SPEC_VERSION}-centre-delete.zip centre-delete/*
+zip ${SPEC_NAME}-${SPEC_VERSION}-delete.zip delete/*
 popd
 
 # make zip file
@@ -36,7 +38,7 @@ pushd .
 cd doc
 
 rm -rf _data build
-cp -rf ../data _data
+#cp -rf ../data _data
 
 GIT_VERSION=$(git describe --tags --always)
 

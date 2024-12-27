@@ -27,6 +27,7 @@ Version |version|
    :caption: Table of Contents
    :maxdepth: 3
 
+   upgrading-from-previous-versions
    data-model-and-specifications
    upload-specification
    validation-rules

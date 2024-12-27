@@ -7,4 +7,4 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 If the date the activity was performed is unknown, 09099999 should be used.
 
 Validations for collection occasion date are listed at
- `Collection Occasion Validations <https://docs.pmhc-mds.com/projects/data-specification/en/v4/validation-rules.html#collection-occasion>`_.
+ `Collection Occasion Validations <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/validation-rules.html#collection-occasion>`_.

@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 
 # -- Read important params from environment
 
-load_dotenv('config.env')
+load_dotenv('version.env')
 spec_name = environ.get('SPEC_NAME')
 version   = environ.get('SPEC_VERSION')
 
@@ -37,7 +37,7 @@ version   = environ.get('SPEC_VERSION')
 # ones.
 
 # extensions = ['cloud_sptheme.ext.table_styling']
-extensions = []
+extensions = ['sphinx_rtd_theme_ext_color_contrast']
 
 
 # Add any paths that contain templates here, relative to this directory.

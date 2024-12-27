@@ -12,7 +12,7 @@ by using the API which is available at https://api.pmhc-mds.net/.
 File requirements
 -----------------
 
-Please refer to `PMHC MDS File types <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#file-requirements>`_.
+Please refer to `PMHC MDS File types <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#file-requirements>`_.
 
 .. _files-to-upload:
 
@@ -39,17 +39,17 @@ Example upload files can be found at :ref:`example-upload-files`.
 File format
 -----------
 
-Same as standard `PMHC MDS File format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#file-format>`_.
+Same as standard `PMHC MDS File format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#file-format>`_.
 
 .. _metadata-format:
 
 Metadata file
 ^^^^^^^^^^^^^
 
-All headspace version 4.0 data uploads must include a Metadata file/worksheet.
+All headspace version 4.1 data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain 'key' and the second cell must contain 'value'
 - In the second row, the first cell must contain 'type' and the second cell must contain 'HEADSPACE'
-- In the third row, the first cell must contain 'version' and the second cell must contain '4.0'
+- In the third row, the first cell must contain 'version' and the second cell must contain '4.1'
 
 i.e.:
 
@@ -65,7 +65,7 @@ Example Metadata files can be found at :ref:`example-upload-files`.
 Organisation file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS Organisation file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#organisation-file-format>`_.
+Same as standard `PMHC MDS Organisation file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#organisation-file-format>`_.
 
 Example Organisation files can be found in the example files at :ref:`example-upload-files`.
 
@@ -74,7 +74,7 @@ Example Organisation files can be found in the example files at :ref:`example-up
 Client format
 ^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS Client file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#client-format>`_.
+Same as standard `PMHC MDS Client file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#client-format>`_.
 
 Example Client files can be found in the example files at :ref:`example-upload-files`.
 
@@ -83,7 +83,7 @@ Example Client files can be found in the example files at :ref:`example-upload-f
 Intake format
 ^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS Intake file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#intake-format>`_.
+Same as standard `PMHC MDS Intake file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#intake-format>`_.
 
 Example Intake files can be found in the example files at :ref:`example-upload-files`.
 
@@ -92,7 +92,7 @@ Example Intake files can be found in the example files at :ref:`example-upload-f
 IAR-DST format
 ^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS IAR-DST file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#iar-dst-format>`_.
+Same as standard `PMHC MDS IAR-DST file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#iar-dst-format>`_.
 
 Example IAR-DST files can be found in the example files at :ref:`example-upload-files`.
 
@@ -101,7 +101,7 @@ Example IAR-DST files can be found in the example files at :ref:`example-upload-
 Intake Episode format
 ^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS Intake Episode file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#intake-episode-format>`_.
+Same as standard `PMHC MDS Intake Episode file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#intake-episode-format>`_.
 
 Example Intake Episode files can be found in the example files at :ref:`example-upload-files`.
 
@@ -157,7 +157,7 @@ Example Collection Occasion files can be found in the example files at :ref:`exa
 K10+ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS K10+ file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#k10p-format>`_.
+Same as standard `PMHC MDS K10+ file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#k10p-format>`_.
 
 Example K10+ files can be found in any of the example files at :ref:`example-upload-files`.
 
@@ -166,7 +166,7 @@ Example K10+ files can be found in any of the example files at :ref:`example-upl
 K5 Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS K5 file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#k5-format>`_.
+Same as standard `PMHC MDS K5 file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#k5-format>`_.
 
 Example K5 files can be found in any of the example files at :ref:`example-upload-files`.
 
@@ -175,7 +175,7 @@ Example K5 files can be found in any of the example files at :ref:`example-uploa
 SDQ Collection Occasion file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS SDQ file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#sdq-format>`_.
+Same as standard `PMHC MDS SDQ file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#sdq-format>`_.
 
 Example SDQ files can be found in any of the example files at :ref:`example-upload-files`.
 
@@ -184,7 +184,7 @@ Example SDQ files can be found in any of the example files at :ref:`example-uplo
 Practitioner file format
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as standard `PMHC MDS Practitioner file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#practitioner-format>`_.
+Same as standard `PMHC MDS Practitioner file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#practitioner-format>`_.
 
 Example Practitioner files can be found in any of the example files at :ref:`example-upload-files`.
 
@@ -193,7 +193,7 @@ Example Practitioner files can be found in any of the example files at :ref:`exa
 Deleting records
 ----------------
 
-Please refer to `PMHC MDS Deleting records <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#deleting-records>`_
+Please refer to `PMHC MDS Deleting records <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#deleting-records>`_
 
 Example files showing how to delete via upload can be found in any of the example files at :ref:`example-upload-files`.
 

@@ -12,7 +12,7 @@ https://docs.pmhc-mds.com/projects/data-specification/en/latest/index.html.
 Key concepts
 ------------
 
-See `PMHC MDS Key concepts <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#key-concepts>`_
+See `PMHC MDS Key concepts <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#key-concepts>`_
 for an explanation of key concepts used in the PMHC MDS.
 
 .. _data-model:
@@ -22,12 +22,12 @@ Data model
 
 .. _data-model-diagram:
 
-.. figure:: figures/data-model-v4.0.svg
-   :alt: headspace v4.0 PMHC data model
+.. figure:: figures/data-model-v4.1.svg
+   :alt: headspace v4.1 PMHC data model
 
    headspace data model *within the PMHC MDS*
 
-**Note:** `PMHC MDS Collection Occasion records <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#collection-occasion-diagram>`_ for more details about
+**Note:** `PMHC MDS Collection Occasion records <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#collection-occasion-diagram>`_ for more details about
 Collection Occasion records.
 
 .. _record-formats:
@@ -60,6 +60,14 @@ Provider Organisation
 ^^^^^^^^^^^^^^^^^^^^^
 
 Same as standard `PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_.
+
+.. _key-concepts-site:
+
+Site
+^^^^
+
+Some Provider Organisations provide services to clients at multiple locations. In the PMHC MDS a site
+is a particular location at which a Provider Organisation provides a service to a client.
 
 ----------
 
@@ -178,7 +186,7 @@ Measures at Intake
 IAR-DST
 '''''''
 
-Same as standard `PMHC MDS IAR-DST <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#iar-dst-data-elements>`_.
+Same as standard `PMHC MDS IAR-DST <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#iar-dst-data-elements>`_.
 
 .. _episode_measures:
 
@@ -190,21 +198,21 @@ Measures during an Episode
 K10+
 """"
 
-Same as standard `PMHC MDS K10+ <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#k10p-data-elements>`_.
+Same as standard `PMHC MDS K10+ <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#k10p-data-elements>`_.
 
 .. _k5-data-elements:
 
 K5
 ""
 
-Same as standard `PMHC MDS K5 <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#k5-data-elements>`_.
+Same as standard `PMHC MDS K5 <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#k5-data-elements>`_.
 
 .. _sdq-data-elements:
 
 SDQ
 """
 
-Same as standard `PMHC MDS SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#sdq-data-elements>`_.
+Same as standard `PMHC MDS SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#sdq-data-elements>`_.
 
 ----------
 

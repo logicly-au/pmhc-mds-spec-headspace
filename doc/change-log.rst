@@ -3,60 +3,14 @@
 Data Specification Change log
 =============================
 
-22/8/2024 - Version 4.0
------------------------
+27/12/2024 - Draft 4.1.0
+------------------------
 
 * :ref:`data-model-and-specifications`
 
   * :ref:`record-formats`
 
-    * Updated :ref:`intake-data-elements` to document that only '6: headspace' is allowed for Intake Program Type.
-
-  * :ref:`data-model`
-
-    * Updated :ref:`data-model-diagram` to fix the direction of the relationship
-      between Intake Episode and Intake
-
-21/8/2024
----------
-
-* :ref:`data-model-and-specifications`
-
-  * :ref:`record-formats`
-
-    * Updated :ref:`dfn-referral_date` to allow '09099999'
-
-23/2/2024
----------
-
-* :ref:`data-model-and-specifications`
-
-  * :ref:`data-model`
-
-    * Updated :ref:`data-model-diagram` to show the organisational
-      relationships between Service Contact/Service Contact Practitioner and
-      Service Contact Practitioner/Practitioner
-
-  * :ref:`record-formats`
-
-    * Updated :ref:`dfn-funding_source` to change references of `Federal` to 
-      `Commonwealth`
-    * Updated :ref:`dfn-funding_source` to change the description of response 
-      97 from `Other funding source – no Commonwealth Funding` to
-      `Other funding source – no Commonwealth/State Funding`
-
-
-
-12/2/2024
----------
-
-* :ref:`data-model-and-specifications`
-
-  * :ref:`record-formats`
-
-    * All headspace data must use the '6: headspace' :ref:`dfn-program_type`
-
-8/2/2024 - Draft Version 4.0
-------------------------------
-
-* Initial release.
+    * `Sites <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/data-model-and-specifications.html#sites>`_ - Added sites field to the Organisation record to allow the sites at which an organisation provides services to clients to be specified
+    * :ref:`dfn-service_contact_site` - Added site field to the Service Contact record to allow the site at which a Service Contact took place to be specified
+    * :ref:`dfn-service_contact_modality` - Added response '5: SMS'
+    

@@ -6,5 +6,5 @@ in the afternoon would be 15:45.
 The end-of-day flag "24:00" may be used as a missing time value for any
 existing Service Contacts that have previously been added to the MDS without
 a start time. See Validations for start date are listed at
-`Service Contact Validations <https://docs.pmhc-mds.com/projects/data-specification/en/v4/validation-rules.html#https://docs.pmhc-mds.com/projects/data-specification/en/v4/validation-rules.html#service-contact>`_ for rules on
+`Service Contact Validations <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/validation-rules.html#https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/validation-rules.html#service-contact>`_ for rules on
 how the end-of-day value may be used.

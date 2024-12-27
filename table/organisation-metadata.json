@@ -104,6 +104,18 @@
     },
     "required": true
   },{
+    "name": "sites",
+    "titles": [ "sites" ],
+    "dc:title" : "Sites",
+    "schema:description": "The sites at which an Organisation provides services to clients.",
+    "schema:dateCreated": "2024-12-26",
+    "schema:dateModified": "2024-12-26",
+    "separator": ",",
+    "datatype": {
+      "base": "string"
+    },
+    "required": false
+  },{
     "name": "organisation_tags",
     "titles": [ "organisation_tags" ],
     "dc:title" : "Organisation Tags",
