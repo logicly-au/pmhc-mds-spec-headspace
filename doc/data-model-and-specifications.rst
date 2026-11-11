@@ -229,7 +229,7 @@ Download Specification Files
 Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:
 
-* `Specification zip <../_static/pmhcmds-spec-headspace-meta.zip>`_
+* `Specification zip <_static/headspace-spec-meta.zip>`_
 
 These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/.
 
