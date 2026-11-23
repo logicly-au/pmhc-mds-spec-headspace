@@ -3,8 +3,15 @@
 Data Specification Change log
 =============================
 
-27/12/2024 - Draft 4.1.0
-------------------------
+11/11/2026
+----------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-specifications-download` - Corrected the link for downloading the specification files
+
+27/12/2024 - 4.1.0
+------------------
 
 * :ref:`data-model-and-specifications`
 
